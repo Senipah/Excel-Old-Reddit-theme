@@ -47,8 +47,8 @@ $_breakpoints: (
   }
 }
 
-@mixin stroke($color, $shadow: 0px) {
-  $color: map-get(light.$theme, $color);
+@mixin _stroke($color, $shadow: 1px) {
+  // $color: v.try-map-get(light.$theme, $color);
   $size: 1px;
   $blur: 0;
   text-shadow: $shadow $shadow $blur $color, $size * -1 $size * -1 $blur $color,
@@ -57,13 +57,19 @@ $_breakpoints: (
 }
 
 @mixin theme-stroke($key, $shadow: 0px) {
-  $val: map-get(light.$theme, $key);
-  $size: 1px;
-  $blur: 0;
-  @include stroke($val, $shadow);
-  @media (prefers-color-scheme: dark) {
-    $val: map-get(dark.$theme, $key);
-    @include stroke($val, $shadow);
+  @if $key == "lightText" {
+    $val: v.try-map-get(dark.$theme, v.$bodyText);
+    @include _stroke($val, $shadow);
+  } @else if $key == "darkText" {
+    $val: v.try-map-get(light.$theme, v.$bodyText);
+    @include _stroke($val, $shadow);
+  } @else {
+    $val: v.try-map-get(light.$theme, $key);
+    @include _stroke($val, $shadow);
+    @media (prefers-color-scheme: dark) {
+      $val: v.try-map-get(dark.$theme, $key);
+      @include _stroke($val, $shadow);
+    }
   }
 }
 
@@ -109,7 +115,7 @@ $_breakpoints: (
   $additionalProperties: "",
   $important: false
 ) {
-  @if #{$color} == "lightText" {
+  @if $color == "lightText" {
     @include themeProperty(
       dark.$theme,
       $property,
