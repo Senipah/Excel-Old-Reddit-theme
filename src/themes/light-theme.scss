@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-$_primary: #f50;
+$_primary: #217346;
 
 $theme: (
   "actionIcon": #878a8c,
@@ -14,7 +14,7 @@ $theme: (
   "button": $_primary,
   "buttonTinted50": color.scale($_primary, $lightness: 50%),
   "buttonShaded80": color.scale($_primary, $lightness: -80%),
-  "canvas": #edeff1,
+  "canvas": #e6e6e6,
   "field": #f6f7f8,
   "highlight": #fbe6e8,
   "highlight-background": #d7dfe7,
@@ -25,7 +25,7 @@ $theme: (
   "menu": $_primary,
   "menuActiveText": #ffffff,
   "metaText": #7a797c,
-  "navBar-backgroundColor": $_primary,
+  "navBar-backgroundColor": #f3f3f3,
   "navBar-hoverLink": $_primary,
   "placeholder": #d2d0d6,
   "postIcon": #878589,
