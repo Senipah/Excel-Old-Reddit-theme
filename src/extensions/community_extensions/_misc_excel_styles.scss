@@ -2,4 +2,7 @@
 
 .bottommenu {
   @include v.theme("color", v.$lightText);
+  a {
+    @include v.theme("color", v.$linkText);
+  }
 }
