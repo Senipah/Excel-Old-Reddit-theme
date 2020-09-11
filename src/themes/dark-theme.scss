@@ -14,7 +14,8 @@ $theme: (
   "button": #d7dadc,
   "buttonTinted50": color.scale(#d7dadc, $lightness: 50%),
   "buttonShaded80": color.scale(#d7dadc, $lightness: -80%),
-  "canvas": #262626,
+  "canvas": #030303,
+  // #262626 is the excel color
   "field": #272729,
   "highlight": #17232d,
   "highlight-background": #1e2931,
