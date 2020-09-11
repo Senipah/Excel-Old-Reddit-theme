@@ -29,6 +29,9 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
     .width-clip {
       margin-top: 110px;
     }
+    #srLeftContainer {
+      margin-left: v.$container-margin-hor;
+    }
   }
   #header-bottom-left {
     height: $_ribbon-height;
