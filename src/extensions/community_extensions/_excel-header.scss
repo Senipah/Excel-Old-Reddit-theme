@@ -1,6 +1,7 @@
 @use '../../abstracts/mixins' as v;
 
 $_ribbon-height: 92px;
+$_snoo-margin-top: $_ribbon-height - 40px - 5px;
 
 #header {
   height: v.$header-height;
@@ -43,9 +44,10 @@ $_ribbon-height: 92px;
       }
     }
     #header-img {
-      position: absolute;
-      height: 50px;
-      top: 40px;
+      // position: absolute;
+      margin-top: $_snoo-margin-top;
+      // height: 50px;
+      // top: 40px;
     }
     .tabmenu {
       background-color: inherit;
