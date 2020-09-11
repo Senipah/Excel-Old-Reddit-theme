@@ -1,7 +1,8 @@
 @use '../abstracts/mixins' as v;
 
 $_search-height: 58px;
-$_element-count: 3;
+// $_element-count: 3;
+$_element-count: 2; // changed to 2 for /r/excel
 $_breakpoint: "large";
 
 // IE11 doesnt support nested calcs.
@@ -191,16 +192,19 @@ body {
           width: $_element-width-large;
         }
         &-link {
-          left: $_submit-link-left-small;
-          @include v.respond-to($_breakpoint) {
-            left: $_submit-link-left-large;
-          }
+          // left: $_submit-link-left-small;
+          // @include v.respond-to($_breakpoint) {
+          //   left: $_submit-link-left-large;
+          // }
+          display: none;
         }
         &.disabled,
         &-text {
-          left: $_submit-text-left-small;
+          // left: $_submit-text-left-small;
+          left: $_submit-link-left-small; // /r/excel hides link
           @include v.respond-to($_breakpoint) {
-            left: $_submit-text-left-large;
+            // left: $_submit-text-left-large; ///r/excel hides link
+            left: $_submit-link-left-large;
           }
         }
       }
