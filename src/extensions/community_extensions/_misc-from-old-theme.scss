@@ -93,20 +93,6 @@ a[href="https://www.reddit.com/r/excel/wiki/paperclip"]:after
   font-weight: bold;
 }
 
-// Hides default text - Adds text to the submission page
-#link-desc,
-#text-desc {
-  font-size: 0px;
-}
-
-#link-desc:after,
-#text-desc:after {
-  display: block;
-  font-weight: bold;
-  content: "PLEASE READ THE GUIDELINES ABOVE OR YOUR POST MAY BE REMOVED";
-  font-size: 16px;
-}
-
 //  DO NOT ALLOW DOWNVOTE UNLESS SUBSCRIBED!
 
 body:not(.subscriber) .down {
