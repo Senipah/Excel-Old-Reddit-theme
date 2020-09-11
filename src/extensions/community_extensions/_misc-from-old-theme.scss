@@ -1,33 +1,33 @@
 @use '../../abstracts/mixins' as v;
 
 // V1.23 25/07/2017 == SUBSCRIPT and +CODE &  SUPERSCRIPT+CODE ==
-.md em {
-  position: relative;
-}
-.md em em {
-  font-style: normal;
-  vertical-align: sub;
-  font-size: 80%;
-}
+// .md em {
+//   position: relative;
+// }
+// .md em em {
+//   font-style: normal;
+//   vertical-align: sub;
+//   font-size: 80%;
+// }
 
-.md em code {
-  vertical-align: super;
-  font-size: 80%;
-}
+// .md em code {
+//   vertical-align: super;
+//   font-size: 80%;
+// }
 
-.md em em + code {
-  position: absolute;
-  left: 0;
-  bottom: 1em;
-  vertical-align: super;
-}
+// .md em em + code {
+//   position: absolute;
+//   left: 0;
+//   bottom: 1em;
+//   vertical-align: super;
+// }
 
-.md em code + em {
-  position: absolute;
-  left: 0;
-  top: 1em;
-  vertical-align: sub;
-}
+// .md em code + em {
+//   position: absolute;
+//   left: 0;
+//   top: 1em;
+//   vertical-align: sub;
+// }
 
 // Change [deleted] comment authors to #Value
 p.tagline em {

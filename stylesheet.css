@@ -103,7 +103,7 @@ a {
   margin-top: 60px;
   height: 180px;
   border-top: 50px solid #ffffff ;
-  background: url("../images/footer.png") 50% 0/cover no-repeat;
+  background: url(%%footer%%) 50% 0/cover no-repeat;
   padding: 65px 200px 40px;
 }
 @media (prefers-color-scheme: dark) {
@@ -272,12 +272,12 @@ a {
 }
 
 #mail.havemail:before {
-  animation-name: uk29zft;
+  animation-name: ubli2o7;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uk29zft {
+@keyframes ubli2o7 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -567,7 +567,7 @@ a.random.choice {
   z-index: 99;
   width: 42px;
   height: 40px;
-  background-image: url("../images/snoo-sprite.png");
+  background-image: url(%%snoo-sprite%%);
   background-position: 0 0;
   vertical-align: top;
   font-size: 0;
@@ -1599,7 +1599,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: uk29zg1;
+  animation-name: ubli2oz;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1609,7 +1609,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes uk29zg1 {
+@keyframes ubli2oz {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -4381,11 +4381,13 @@ html .mod-toolbox-rd #tb-feedback-window .tb-feedback-text {
     background-color: #1a1a1b ;
   }
 }
+html .action-reason,
 html .mod-toolbox-rd .menuarea.modtools {
   background-color: #d7dfe7 ;
 }
 @media (prefers-color-scheme: dark) {
-  html .mod-toolbox-rd .menuarea.modtools {
+  html .action-reason,
+html .mod-toolbox-rd .menuarea.modtools {
     background-color: #1e2931 ;
   }
 }
@@ -4472,7 +4474,7 @@ html .mod-toolbox-rd .menuarea.modtools {
   width: 100%;
 }
 .comments-page .usertext textarea:not(:focus) {
-  background-image: url("../images/commentboxbg.png");
+  background-image: url(%%commentboxbg%%);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -5067,7 +5069,7 @@ body > .content .link .rank,
   margin: 0;
   width: 100%;
   height: 416px;
-  background: transparent url("../images/noresults.png") no-repeat 50% 50%;
+  background: transparent url(%%noresults%%) no-repeat 50% 50%;
   text-indent: -9999px;
   font-size: 0;
   display: block;
@@ -5287,7 +5289,7 @@ body > .content .link .rank,
   margin: 0;
   width: 100%;
   height: 416px;
-  background: transparent url("../images/noresults.png") no-repeat 50% 50%;
+  background: transparent url(%%noresults%%) no-repeat 50% 50%;
   text-indent: -9999px;
   font-size: 0;
   display: block;
@@ -6169,7 +6171,7 @@ body.comments-page .side {
   height: 50px;
   width: 100%;
   background-color: #217346 ;
-  background-image: url("../images/excel-sidebar.png");
+  background-image: url(%%excel-sidebar%%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6195,7 +6197,7 @@ body:not(.subscriber) #header::after {
   border-radius: 0;
   color: #444444;
   padding-left: 40px;
-  background-image: url("../images/info-shield.png");
+  background-image: url(%%info-shield%%);
   background-position: 10px center;
   background-repeat: no-repeat;
   top: 232px;
@@ -6230,35 +6232,6 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
   margin-top: -40px;
 }
 
-.md em {
-  position: relative;
-}
-
-.md em em {
-  font-style: normal;
-  vertical-align: sub;
-  font-size: 80%;
-}
-
-.md em code {
-  vertical-align: super;
-  font-size: 80%;
-}
-
-.md em em + code {
-  position: absolute;
-  left: 0;
-  bottom: 1em;
-  vertical-align: super;
-}
-
-.md em code + em {
-  position: absolute;
-  left: 0;
-  top: 1em;
-  vertical-align: sub;
-}
-
 p.tagline em {
   visibility: hidden;
   font-size: 0;
@@ -6280,7 +6253,7 @@ p.tagline em:after {
 }
 
 a[href="https://www.reddit.com/r/excel/wiki/paperclip"]:after {
-  content: url("../images/paperclip.png");
+  content: url(%%paperclip%%);
   pointer-events: none;
   cursor: default;
 }
@@ -6349,7 +6322,7 @@ body:not(.subscriber) .down {
 .commentarea .flair-points {
   background-color: transparent;
   border: none;
-  background-image: url("../images/clippyflair.png");
+  background-image: url(%%clippyflair%%);
   background-position: center;
   position: absolute;
   width: 35px;
@@ -6506,7 +6479,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   height: 140px;
   color: #292f34 ;
   background-color: #f3f3f3 ;
-  background-image: url("../images/light-header-img.png");
+  background-image: url(%%light-header-img%%);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 1916px 107px;
@@ -6518,7 +6491,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 @media (prefers-color-scheme: dark) {
   #header #sr-header-area {
-    background-image: url("../images/dark-header-img.png");
+    background-image: url(%%dark-header-img%%);
   }
 }
 #header #sr-header-area #RESShortcutsEditContainer,
@@ -6615,258 +6588,74 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 
 .linkflair-waitingonop .linkflairlabel {
-  background: #77bafe;
-  color: #d7dadc ;
-  border: 1px solid #77bafe;
-}
-.linkflair-waitingonop .linkflairlabel:active {
-  background: #01254a;
-}
-.linkflair-waitingonop .linkflairlabel:hover {
-  background: #bbddff;
-  border: 1px solid #bbddff;
+  background-color: #77bafe;
 }
 
 .linkflair-abandoned .linkflairlabel {
-  background: #909090;
-  color: #d7dadc ;
-  border: 1px solid #909090;
-}
-.linkflair-abandoned .linkflairlabel:active {
-  background: #1d1d1d;
-}
-.linkflair-abandoned .linkflairlabel:hover {
-  background: #c8c8c8;
-  border: 1px solid #c8c8c8;
+  background-color: #909090;
 }
 
 .linkflair-template .linkflairlabel {
-  background: #c4abeb;
-  color: #d7dadc ;
-  border: 1px solid #c4abeb;
-}
-.linkflair-template .linkflairlabel:active {
-  background: #231042;
-}
-.linkflair-template .linkflairlabel:hover {
-  background: #e2d5f5;
-  border: 1px solid #e2d5f5;
+  background-color: #c4abeb;
 }
 
 .linkflair-discussioncase .linkflairlabel {
-  background: #768ba7;
-  color: #d7dadc ;
-  border: 1px solid #768ba7;
-}
-.linkflair-discussioncase .linkflairlabel:active {
-  background: #161c23;
-}
-.linkflair-discussioncase .linkflairlabel:hover {
-  background: #bbc5d3;
-  border: 1px solid #bbc5d3;
+  background-color: #768ba7;
 }
 
 .linkflair-solvedcase .linkflairlabel {
-  background: #669999;
-  color: #d7dadc ;
-  border: 1px solid #669999;
-}
-.linkflair-solvedcase .linkflairlabel:active {
-  background: #141f1f;
-}
-.linkflair-solvedcase .linkflairlabel:hover {
-  background: #b3cccc;
-  border: 1px solid #b3cccc;
+  background-color: #669999;
 }
 
 .linkflair-pending .linkflairlabel {
-  background: #ff4500;
-  color: #d7dadc ;
-  border: 1px solid #ff4500;
-}
-.linkflair-pending .linkflairlabel:active {
-  background: #330e00;
-}
-.linkflair-pending .linkflairlabel:hover {
-  background: #ffa280;
-  border: 1px solid #ffa280;
+  background-color: #ff4500;
 }
 
 .linkflair-approved .linkflairlabel {
-  background: #ff4500;
-  color: #d7dadc ;
-  border: 1px solid #ff4500;
-}
-.linkflair-approved .linkflairlabel:active {
-  background: #330e00;
-}
-.linkflair-approved .linkflairlabel:hover {
-  background: #ffa280;
-  border: 1px solid #ffa280;
+  background-color: #ff4500;
 }
 
 .linkflair-showandtell .linkflairlabel {
-  background: #005dff;
-  color: #d7dadc ;
-  border: 1px solid #005dff;
-}
-.linkflair-showandtell .linkflairlabel:active {
-  background: #001333;
-}
-.linkflair-showandtell .linkflairlabel:hover {
-  background: #80aeff;
-  border: 1px solid #80aeff;
+  background-color: #005dff;
 }
 
 .linkflair-excelevent .linkflairlabel {
-  background: #01723a;
-  color: #d7dadc ;
-  border: 1px solid #01723a;
-}
-.linkflair-excelevent .linkflairlabel:active {
-  background: #00170c;
-}
-.linkflair-excelevent .linkflairlabel:hover {
-  background: #3bfd9d;
-  border: 1px solid #3bfd9d;
+  background-color: #01723a;
 }
 
 .linkflair-paidservice .linkflairlabel {
-  background: #ffba4e;
-  color: #d7dadc ;
-  border: 1px solid #ffba4e;
-}
-.linkflair-paidservice .linkflairlabel:active {
-  background: #432900;
-}
-.linkflair-paidservice .linkflairlabel:hover {
-  background: #ffdda7;
-  border: 1px solid #ffdda7;
+  background-color: #ffba4e;
 }
 
 .linkflair-notsolvedcase .linkflairlabel {
-  background: #cc6666;
-  color: #d7dadc ;
-  border: 1px solid #cc6666;
-}
-.linkflair-notsolvedcase .linkflairlabel:active {
-  background: #2e0f0f;
-}
-.linkflair-notsolvedcase .linkflairlabel:hover {
-  background: #e6b3b3;
-  border: 1px solid #e6b3b3;
+  background-color: #cc6666;
 }
 
 .linkflair-unsolved .linkflairlabel {
-  background: #cc6666;
-  color: #d7dadc ;
-  border: 1px solid #cc6666;
-}
-.linkflair-unsolved .linkflairlabel:active {
-  background: #2e0f0f;
-}
-.linkflair-unsolved .linkflairlabel:hover {
-  background: #e6b3b3;
-  border: 1px solid #e6b3b3;
+  background-color: #cc6666;
 }
 
 .linkflair-protip .linkflairlabel {
-  background: #b8b9c2;
-  color: #d7dadc ;
-  border: 1px solid #b8b9c2;
-}
-.linkflair-protip .linkflairlabel:active {
-  background: #232429;
-}
-.linkflair-protip .linkflairlabel:hover {
-  background: #dcdce1;
-  border: 1px solid #dcdce1;
+  background-color: #b8b9c2;
 }
 
 .linkflair-challenge .linkflairlabel {
-  background: blue;
-  color: #d7dadc ;
-  border: 1px solid blue;
-}
-.linkflair-challenge .linkflairlabel:active {
-  background: #000033;
-}
-.linkflair-challenge .linkflairlabel:hover {
-  background: #8080ff;
-  border: 1px solid #8080ff;
+  background-color: #008e00;
 }
 
 .linkflair-solvedpoint .linkflairlabel {
-  background: #008e00;
-  color: #d7dadc ;
-  border: 1px solid #008e00;
-}
-.linkflair-solvedpoint .linkflairlabel:active {
-  background: #001c00;
-}
-.linkflair-solvedpoint .linkflairlabel:hover {
-  background: #47ff47;
-  border: 1px solid #47ff47;
+  background-color: #008e00;
 }
 
 .linkflair-mod .linkflairlabel {
-  background: #27b062;
-  color: #d7dadc ;
-  border: 1px solid #27b062;
-}
-.linkflair-mod .linkflairlabel:active {
-  background: #082314;
-}
-.linkflair-mod .linkflairlabel:hover {
-  background: #86e4af;
-  border: 1px solid #86e4af;
+  background-color: #27b062;
 }
 
 .linkflair-removed-rule-1 .linkflairlabel,
 .linkflair-removed-rule-2 .linkflairlabel,
 .linkflair-removed-rules-1-2 .linkflairlabel,
 .linkflair-removed .linkflairlabel {
-  background: #202020;
-  color: #d7dadc ;
-  border: 1px solid #202020;
-}
-.linkflair-removed-rule-1 .linkflairlabel:active,
-.linkflair-removed-rule-2 .linkflairlabel:active,
-.linkflair-removed-rules-1-2 .linkflairlabel:active,
-.linkflair-removed .linkflairlabel:active {
-  background: #060606;
-}
-.linkflair-removed-rule-1 .linkflairlabel:hover,
-.linkflair-removed-rule-2 .linkflairlabel:hover,
-.linkflair-removed-rules-1-2 .linkflairlabel:hover,
-.linkflair-removed .linkflairlabel:hover {
-  background: #909090;
-  border: 1px solid #909090;
-}
-
-.linkflair-meta a.title {
-  font-weight: bold;
-}
-
-.linkflair-meta .rank,
-.linkflair-meta .score,
-.linkflair-meta .score-placeholder {
-  display: none !important;
-}
-
-.linkflair-meta .midcol {
-  width: 50px !important;
-}
-
-.linkflair-meta.compressed .midcol {
-  margin: 2px 3px 0;
-}
-
-.linkflair-meta .arrow {
-  display: inline-block !important;
-  margin: 0 3px;
-  padding: 0;
-  font-size: 16px;
+  background-color: #202020;
 }
 
 .bottommenu {
@@ -6882,7 +6671,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 
 .post-submitter .commentarea > .usertext textarea:not(:focus) {
-  background-image: url("../images/comment-area-bg2.png");
+  background-image: url(%%comment-area-bg2%%);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

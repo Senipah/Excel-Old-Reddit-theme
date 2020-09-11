@@ -1,67 +1,67 @@
 @use '../../abstracts/mixins' as v;
 
 .linkflair-waitingonop .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "waitingonop"));
+  background-color: v.getColor("linkflair", "waitingonop");
 }
 
 .linkflair-abandoned .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "abandoned"));
+  background-color: v.getColor("linkflair", "abandoned");
 }
 
 .linkflair-template .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "template"));
+  background-color: v.getColor("linkflair", "template");
 }
 
 .linkflair-discussioncase .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "discussioncase"));
+  background-color: v.getColor("linkflair", "discussioncase");
 }
 
 .linkflair-solvedcase .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "solvedcase"));
+  background-color: v.getColor("linkflair", "solvedcase");
 }
 
 .linkflair-pending .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "pending"));
+  background-color: v.getColor("linkflair", "pending");
 }
 
 .linkflair-approved .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "approved"));
+  background-color: v.getColor("linkflair", "approved");
 }
 
 .linkflair-showandtell .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "showandtell"));
+  background-color: v.getColor("linkflair", "showandtell");
 }
 
 .linkflair-excelevent .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "excelevent"));
+  background-color: v.getColor("linkflair", "excelevent");
 }
 
 .linkflair-paidservice .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "paidservice"));
+  background-color: v.getColor("linkflair", "paidservice");
 }
 
 .linkflair-notsolvedcase .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "notsolvedcase"));
+  background-color: v.getColor("linkflair", "notsolvedcase");
 }
 
 .linkflair-unsolved .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "unsolved"));
+  background-color: v.getColor("linkflair", "unsolved");
 }
 
 .linkflair-protip .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "protip"));
+  background-color: v.getColor("linkflair", "protip");
 }
 
 .linkflair-challenge .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "challenge"));
+  background-color: v.getColor("linkflair", "solvedpoint");
 }
 
 .linkflair-solvedpoint .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "solvedpoint"));
+  background-color: v.getColor("linkflair", "solvedpoint");
 }
 
 .linkflair-mod .linkflairlabel {
-  @include v.customButtonColors(v.getColor("linkflair", "mod"));
+  background-color: v.getColor("linkflair", "mod");
 }
 
 .linkflair-removed-rule-1,
@@ -69,31 +69,31 @@
 .linkflair-removed-rules-1-2,
 .linkflair-removed {
   .linkflairlabel {
-    @include v.customButtonColors(v.getColor("linkflair", "removed"));
+    background-color: v.getColor("linkflair", "removed");
   }
 }
 
-.linkflair-meta a.title {
-  font-weight: bold;
-}
+// .linkflair-meta a.title {
+//   font-weight: bold;
+// }
 
-.linkflair-meta .rank,
-.linkflair-meta .score,
-.linkflair-meta .score-placeholder {
-  display: none !important;
-}
+// .linkflair-meta .rank,
+// .linkflair-meta .score,
+// .linkflair-meta .score-placeholder {
+//   display: none !important;
+// }
 
-.linkflair-meta .midcol {
-  width: 50px !important;
-}
+// .linkflair-meta .midcol {
+//   width: 50px !important;
+// }
 
-.linkflair-meta.compressed .midcol {
-  margin: 2px 3px 0;
-}
+// .linkflair-meta.compressed .midcol {
+//   margin: 2px 3px 0;
+// }
 
-.linkflair-meta .arrow {
-  display: inline-block !important;
-  margin: 0 3px;
-  padding: 0;
-  font-size: 16px;
-}
+// .linkflair-meta .arrow {
+//   display: inline-block !important;
+//   margin: 0 3px;
+//   padding: 0;
+//   font-size: 16px;
+// }
