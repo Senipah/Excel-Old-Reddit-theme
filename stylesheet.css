@@ -272,12 +272,12 @@ a {
 }
 
 #mail.havemail:before {
-  animation-name: u395xix;
+  animation-name: uo8j90z;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u395xix {
+@keyframes uo8j90z {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1599,7 +1599,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: u395xjd;
+  animation-name: uo8j916;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1609,7 +1609,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes u395xjd {
+@keyframes uo8j916 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6522,6 +6522,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   }
 }
 #header #header-bottom-left .pagename.redditname {
+  color: #d7dadc ;
   font-size: 18px;
   position: absolute;
   left: 50%;
@@ -6572,6 +6573,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   }
 }
 #header #header-bottom-right {
+  top: 0px !important;
   background-color: #217346 ;
 }
 @media (prefers-color-scheme: dark) {
