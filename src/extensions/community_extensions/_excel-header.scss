@@ -1,4 +1,80 @@
 @use '../../abstracts/mixins' as v;
 
+$_ribbon-height: 92px;
+
 #header {
+  height: v.$header-height;
+  @include v.theme("background-color", v.$navBar-backgroundColor);
+  #sr-header-area {
+    position: absolute;
+    top: $_ribbon-height;
+    width: 100%;
+    height: 140px;
+    @include v.theme("color", v.$darkText);
+    @include v.theme("background-color", v.$navBar-backgroundColor);
+    background-image: v.getImage("light-header-img");
+    @media (prefers-color-scheme: dark) {
+      background-image: v.getImage("dark-header-img");
+    }
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 1916px 107px;
+    #RESShortcutsEditContainer,
+    #RESShortcutsViewport,
+    #srLeftContainer,
+    .width-clip {
+      margin-top: 110px;
+    }
+  }
+  #header-bottom-left {
+    height: $_ribbon-height;
+    @include v.theme("background-color", v.$ribbon-color);
+    .pagename.redditname {
+      font-size: 18px;
+      position: absolute;
+      left: 50%;
+      top: 5px;
+      transform: translateX(-25px);
+      a {
+        @include v.theme("color", v.$lightText);
+        font-weight: normal;
+        line-height: 20px;
+        text-transform: capitalize;
+      }
+    }
+    #header-img {
+      position: absolute;
+      height: 50px;
+      top: 40px;
+    }
+    .tabmenu {
+      background-color: inherit;
+      margin-left: 90px;
+      top: 48px;
+      li {
+        a {
+          padding: 0 v.$padding;
+          line-height: 40px;
+          text-transform: capitalize;
+          @include v.theme("color", v.$lightText);
+          font-weight: normal;
+          font-size: 18px;
+        }
+        &.selected a {
+          @include v.theme("background-color", v.$navBar-backgroundColor);
+          font-weight: bold;
+          @include v.theme("color", v.$bodyText);
+          @include v.theme(
+            "border-bottom",
+            v.$navBar-backgroundColor,
+            false,
+            true "2px solid"
+          );
+        }
+      }
+    }
+  }
+  #header-bottom-right {
+    @include v.theme("background-color", v.$ribbon-color);
+  }
 }

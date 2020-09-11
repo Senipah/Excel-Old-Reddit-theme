@@ -3,7 +3,7 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: true;
+$_dev: false;
 
 $base-font: Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
@@ -21,7 +21,7 @@ $title-case: uppercase;
 $radius: 4px;
 // $header-height: 196px;
 $subreddits-bar-height: 24px;
-$header-height: 136px;
+$header-height: 232px;
 $header-bottom-left-height: 96px;
 $header-bottom-left: $header-height - $header-bottom-left-height;
 $tabmenu-height: 42px;
@@ -57,6 +57,8 @@ $_images: (
   "clippyflair": "clippyflair",
   "excel-logo": "excel-logo",
   "excel-sidebar": "excel-sidebar",
+  "light-header-img": "light-header-img",
+  "dark-header-img": "dark-header-img",
 );
 
 @function getImage($name) {
@@ -182,3 +184,4 @@ $voteText-downvote: "voteText-downvote";
 $voteText-upvote: "voteText-upvote";
 $widgetColors-sidebarWidgetBorderColor: "widgetColors-sidebarWidgetBorderColor";
 $widgetColors-sidebarWidgetTextColor: "widgetColors-sidebarWidgetTextColor";
+$ribbon-color: "ribbon-color";

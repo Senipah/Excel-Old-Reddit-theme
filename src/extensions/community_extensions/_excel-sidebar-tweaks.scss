@@ -7,4 +7,10 @@
     @include v.theme("color", v.$lightText);
     text-align: center;
   }
+
+  #moderation_tools .title h1,
+  .sidecontentbox .title h1,
+  .titlebox h1 a {
+    @include v.theme("color", v.$lightText);
+  }
 }

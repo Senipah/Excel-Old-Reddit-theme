@@ -14,7 +14,7 @@ $theme: (
   "button": #d7dadc,
   "buttonTinted50": color.scale(#d7dadc, $lightness: 50%),
   "buttonShaded80": color.scale(#d7dadc, $lightness: -80%),
-  "canvas": #030303,
+  "canvas": #262626,
   "field": #272729,
   "highlight": #17232d,
   "highlight-background": #1e2931,
@@ -25,7 +25,7 @@ $theme: (
   "menu": #030303,
   "menuActiveText": #d7dadc,
   "metaText": #818384,
-  "navBar-backgroundColor": #030303,
+  "navBar-backgroundColor": #363636,
   "navBar-hoverLink": #d7dadc,
   "placeholder": #3a3a3c,
   "postIcon": #818384,
@@ -41,4 +41,5 @@ $theme: (
   "voteText-upvote": #ff4500,
   "widgetColors-sidebarWidgetBorderColor": #474748,
   "widgetColors-sidebarWidgetTextColor": #d7dadc,
+  "ribbon-color": #0a0a0a,
 );

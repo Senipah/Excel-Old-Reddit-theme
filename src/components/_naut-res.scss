@@ -493,41 +493,41 @@ html {
 
   // Pinheader
 
-  .pinHeader-sub #sr-header-area,
-  .pinHeader-subanduser #sr-header-area {
-    background-image: v.getImage("headerimg");
-    background-position: 50% 0;
-  }
+  // .pinHeader-sub #sr-header-area,
+  // .pinHeader-subanduser #sr-header-area {
+  //   background-image: v.getImage("headerimg");
+  //   background-position: 50% 0;
+  // }
 
-  .pinHeader-sub #header-bottom-left,
-  .pinHeader-subanduser #header-bottom-left {
-    margin-top: 0;
-  }
+  // .pinHeader-sub #header-bottom-left,
+  // .pinHeader-subanduser #header-bottom-left {
+  //   margin-top: 0;
+  // }
 
-  .pinHeader-header {
-    &:before {
-      display: none !important;
-    }
+  // .pinHeader-header {
+  //   &:before {
+  //     display: none !important;
+  //   }
 
-    .content {
-      margin-top: 12px !important;
-    }
+  //   .content {
+  //     margin-top: 12px !important;
+  //   }
 
-    .side {
-      margin-top: 164px;
-    }
+  //   .side {
+  //     margin-top: 164px;
+  //   }
 
-    &.res.comments-page .side {
-      margin-top: 290px;
-    }
+  //   &.res.comments-page .side {
+  //     margin-top: 290px;
+  //   }
 
-    #header {
-      top: 0;
-      background-image: v.getImage("headerimg");
-      height: 84px;
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
-    }
-  }
+  //   #header {
+  //     top: 0;
+  //     background-image: v.getImage("headerimg");
+  //     height: 84px;
+  //     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+  //   }
+  // }
 
   // Gear Dropdown
 

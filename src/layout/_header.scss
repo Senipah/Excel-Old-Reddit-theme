@@ -12,7 +12,7 @@ $_snoo-width: 42px;
   height: v.$header-height;
   border: none;
   border-radius: 0px;
-  background: v.getImage("headerimg") 50% (50% / cover) no-repeat;
+  // background: v.getImage("headerimg") 50% (50% / cover) no-repeat;
   z-index: 1;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
 
@@ -24,7 +24,7 @@ $_snoo-width: 42px;
       display: inline-block;
       line-height: $_inner-height;
       @include v.theme("color", v.$bodyText);
-      @include v.theme-stroke(v.$canvas);
+      // @include v.theme-stroke(v.$canvas);
 
       text-transform: v.$title-case;
     }
