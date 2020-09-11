@@ -1,0 +1,7 @@
+@use '../../abstracts/mixins' as v;
+
+.post-submitter .commentarea > .usertext textarea:not(:focus) {
+  background-image: v.getImage("comment-area-bg2");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

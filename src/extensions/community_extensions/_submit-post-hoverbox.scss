@@ -1,0 +1,32 @@
+@use '../../abstracts/mixins' as v;
+
+//  SUBMIT POST HOVER BOX
+.side .submit-text .morelink:after {
+  position: absolute;
+  font-size: 18px;
+  right: 110px;
+  /* HOW FAR RIGHT IT SHOULD GO FROM THE SUBMIT BOX */
+  border: 2px solid;
+  padding: 2px;
+  width: 290px;
+  /* HOW WIDE THE BOX SHOULD BE */
+  background-color: #217346;
+  /*darkgreen;*/
+  font-weight: bold;
+  content: "Read the sidebar first. Your question may already be answered in the Wiki.";
+  top: 100px;
+  /* HOW FAR UP OR DOWN IT SHOULD GO FROM THE SUBMIT BOX */
+  right: -200px;
+  /* HOW FAR RIGHT IT SHOULD MOVE FROM THE LEFT EDGE OF THE SUBMIT BOX */
+  border-radius: 10%;
+  /* ROUNDING OF BOX CORNERS */
+  height: 60px;
+  /* HOW TALL THE BOX SHOULD BE */
+  padding: 10px 10px 0;
+  /* HOW FAR UP AND DOWN THE TEXT INSIDE SHOULD BE */
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 000ms;
+}

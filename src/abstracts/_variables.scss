@@ -3,14 +3,14 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: false;
+$_dev: true;
 
 $base-font: Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
 
-$readers: "Readers";
-$users: "Users currently online";
-$downvote-hover-text: "Consider posting constructive criticism or an explanation when you downvote something.";
+$readers: "Spreadsheet Warriors";
+$users: "Formulas being written";
+$downvote-hover-text: "Downvoting? It's worth a comment explaining why. This is NOT a disagree button";
 
 $moderator: #27b062;
 $orangered: #f50;
@@ -58,6 +58,8 @@ $_images: (
   "light-header-img": "light-header-img",
   "dark-header-img": "dark-header-img",
   "snoo-sprite": "snoo-sprite",
+  "paperclip": "paperclip",
+  "comment-area-bg2": "comment-area-bg2",
 );
 
 @function getImage($name) {
@@ -117,16 +119,23 @@ $_colors: (
     "spoiler": #f44336,
   ),
   "linkflair": (
-    "default": #738491,
-    "unsolved": $orangered,
-    "solved": #738491,
-    "discussion": #007acc,
-    "challenge": #007acc,
-    "protip": #e0d400,
-    "codereview": #800080,
-    "modpost": $moderator,
-    "advertisement": #333333,
-    "showntell": #000,
+    "waitingonop": #77bafe,
+    "abandoned": #909090,
+    "template": #c4abeb,
+    "discussioncase": #768ba7,
+    "solvedcase": #669999,
+    "approved": #ff4500,
+    "showandtell": #005dff,
+    "excelevent": #01723a,
+    "paidservice": #ffba4e,
+    "notsolvedcase": #ffba4e,
+    "unsolved": #cc6666,
+    "protip": #b8b9c2,
+    "challenge": blue,
+    "solvedpoint": #008e00,
+    "mod": $moderator,
+    "solvedpoint": #008e00,
+    "removed": #202020,
   ),
   "code": (
     "background": #1e1e1e,

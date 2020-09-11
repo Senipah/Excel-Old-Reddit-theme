@@ -1,0 +1,120 @@
+@use '../../../abstracts/mixins' as v;
+
+// V1.23 25/07/2017 == SUBSCRIPT and +CODE &  SUPERSCRIPT+CODE ==
+.md em {
+  position: relative;
+}
+.md em em {
+  font-style: normal;
+  vertical-align: sub;
+  font-size: 80%;
+}
+
+.md em code {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+.md em em + code {
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+  vertical-align: super;
+}
+
+.md em code + em {
+  position: absolute;
+  left: 0;
+  top: 1em;
+  vertical-align: sub;
+}
+
+// Change [deleted] comment authors to #Value
+p.tagline em {
+  visibility: hidden;
+  font-size: 0;
+}
+
+p.tagline em:after {
+  visibility: visible;
+  font-size: 10px;
+  content: "#REF   ";
+}
+
+// CHANGE [DELETED] TO #REF
+.deleted > .entry .author {
+  font-size: 0;
+}
+
+.deleted > .entry .author:after {
+  content: "#REF";
+  font-size: x-small;
+}
+
+// Paperclip image for Milestone list
+a[href="https://www.reddit.com/r/excel/wiki/paperclip"]:after
+{
+  content: v.getImage("paperclip");
+  pointer-events: none;
+  cursor: default;
+}
+
+// OP REMINDER MESSAGE
+.post-submitter .commentarea .usertext .bottom-area:before {
+  content: "OP - If your problem is solved, set the thread flair to solved. You can do this and award ClippyPoints by replying to any solutions with SOLUTION VERIFIED!";
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  padding: 4px;
+  color: orangered;
+  font-size: 18px;
+  font-style: italic;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  font-weight: bold;
+  border-style: dotted;
+  border-width: 4px;
+  background: rgba(255, 69, 0, 0.1);
+}
+
+// Change color of self posts depending on their title
+#siteTable a[href*="[dax]"].title,
+#siteTable a[href*="[power_query]"].title,
+#siteTable a[href*="[powerquery]"].title {
+  color: #f24c00;
+  font-weight: bold;
+}
+
+#siteTable a[href*="[macro]"].title,
+#siteTable a[href*="[vba]"].title {
+  color: green;
+  font-weight: bold;
+}
+
+// Hides default text - Adds text to the submission page
+#link-desc,
+#text-desc {
+  font-size: 0px;
+}
+
+#link-desc:after,
+#text-desc:after {
+  display: block;
+  font-weight: bold;
+  content: "PLEASE READ THE GUIDELINES ABOVE OR YOUR POST MAY BE REMOVED";
+  font-size: 16px;
+}
+
+//  DO NOT ALLOW DOWNVOTE UNLESS SUBSCRIBED!
+
+body:not(.subscriber) .down {
+  visibility: hidden !important;
+}
+
+// Changing Clippy on Mod List
+.author[href$="Clippy_Office_Asst"] {
+  color: orangered !important;
+  font-weight: bold;
+}

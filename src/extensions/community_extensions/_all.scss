@@ -1,4 +1,12 @@
+// make this first in import order - most likely want to be overridden
+@use 'misc-from-old-theme';
+
+// rest
 @use 'clippyPoint-styles';
-@use 'excel-sidebar-tweaks';
 @use 'excel-header';
+@use 'excel-sidebar-tweaks';
+@use 'linkflair';
 @use 'misc_excel_styles';
+@use 'op-comment-box-img';
+// @use 'sidebar-filterbyflair';
+@use 'submit-post-hoverbox';
