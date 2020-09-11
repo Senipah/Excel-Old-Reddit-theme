@@ -35,7 +35,7 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
       position: absolute;
       left: 50%;
       top: 5px;
-      transform: translateX(-25px);
+      transform: translateX(-50px);
       a {
         @include v.theme("color", v.$lightText);
         font-weight: normal;
