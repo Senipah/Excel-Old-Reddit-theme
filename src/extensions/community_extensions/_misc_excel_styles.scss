@@ -6,3 +6,8 @@
     @include v.theme("color", v.$linkText);
   }
 }
+
+.sidebox.submit.submit-link {
+  display: none !important;
+  visibility: hidden !important;
+}
