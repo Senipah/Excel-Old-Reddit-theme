@@ -284,12 +284,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uu6u4ih;
+  animation-name: u3696c1;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uu6u4ih {
+@keyframes u3696c1 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1622,7 +1622,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: uu6u4im;
+  animation-name: u3696cn;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1632,7 +1632,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes uu6u4im {
+@keyframes u3696cn {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6548,8 +6548,13 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   margin-left: 90px;
   top: 48px;
 }
+#header #header-bottom-left .tabmenu li {
+  display: inline-block;
+  width: auto;
+}
 #header #header-bottom-left .tabmenu li a {
-  padding: 0 16px;
+  margin: 0;
+  padding: 0 24px;
   line-height: 40px;
   text-transform: capitalize;
   color: #d7dadc ;
