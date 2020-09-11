@@ -2,16 +2,15 @@
 
 .side .submit-text .morelink:after {
   position: absolute;
-  left: -35%;
+  left: -40px;
   top: 100%;
-  width: 370px;
+  width: 300px;
   @include v.theme("background-color", v.$highlight-background);
   @include v.theme("color", v.$bodyText);
-  content: "Read the sidebar first.\AYour question may already be answered in the Wiki.";
+  content: "Read the sidebar first. Your question may already be answered in the Wiki.";
   height: 50px;
   padding: 8px;
   font-size: 1.5em;
-  white-space: pre;
   transform: scaleY(0);
   transition: transform v.$transition ease;
   transform-origin: top;
