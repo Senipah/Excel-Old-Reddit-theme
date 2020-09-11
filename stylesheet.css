@@ -272,12 +272,12 @@ a {
 }
 
 #mail.havemail:before {
-  animation-name: u0yrtos;
+  animation-name: u9wx5q5;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u0yrtos {
+@keyframes u9wx5q5 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1599,7 +1599,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: u0yrtou;
+  animation-name: u9wx5ql;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1609,7 +1609,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes u0yrtou {
+@keyframes u9wx5ql {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6152,9 +6152,6 @@ body.wiki-page .side .sidebox.submit, body.comments-page .side .sidebox.submit, 
     width: calc( ( (100vw - 416px) - 64px ) / 2 );
   }
 }
-body.wiki-page .side .sidebox.submit-link, body.comments-page .side .sidebox.submit-link, body.listing-page .side .sidebox.submit-link {
-  display: none;
-}
 body.wiki-page .side .sidebox.submit.disabled, body.wiki-page .side .sidebox.submit-text, body.comments-page .side .sidebox.submit.disabled, body.comments-page .side .sidebox.submit-text, body.listing-page .side .sidebox.submit.disabled, body.listing-page .side .sidebox.submit-text {
   left: calc( ((100vw - 72px) / 2) - ((16px - -32px) * -1) );
 }
@@ -6667,6 +6664,11 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   .bottommenu a {
     color: #4fbcff ;
   }
+}
+
+.sidebox.submit.submit-link {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 .post-submitter .commentarea > .usertext textarea:not(:focus) {
