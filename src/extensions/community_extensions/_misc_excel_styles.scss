@@ -1,0 +1,5 @@
+@use '../../abstracts/mixins' as v;
+
+.bottommenu {
+  @include v.theme("color", v.$lightText);
+}
