@@ -272,12 +272,12 @@ a {
 }
 
 #mail.havemail:before {
-  animation-name: uo8j90z;
+  animation-name: u0yrtos;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uo8j90z {
+@keyframes u0yrtos {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1599,7 +1599,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: uo8j916;
+  animation-name: u0yrtou;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1609,7 +1609,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes uo8j916 {
+@keyframes u0yrtou {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6095,11 +6095,11 @@ body.wiki-page .side #search, body.comments-page .side #search, body.listing-pag
   }
 }
 body.wiki-page .side #search input, body.comments-page .side #search input, body.listing-page .side #search input {
-  width: calc( ((100vw - 72px) - 80px) / 3 );
+  width: calc( ((100vw - 72px) - 64px) / 2 );
 }
 @media only screen and (min-width: 992px) {
   body.wiki-page .side #search input, body.comments-page .side #search input, body.listing-page .side #search input {
-    width: calc( ( (100vw - 416px) - 80px ) / 3 );
+    width: calc( ( (100vw - 416px) - 64px ) / 2 );
   }
 }
 body.wiki-page .side #search input[type=submit], body.comments-page .side #search input[type=submit], body.listing-page .side #search input[type=submit] {
@@ -6109,7 +6109,7 @@ body.wiki-page .side #search input[type=submit], body.comments-page .side #searc
 body.wiki-page .side #search #searchexpando, body.comments-page .side #search #searchexpando, body.listing-page .side #search #searchexpando {
   position: absolute;
   z-index: 100;
-  width: calc( ((100vw - 72px) - 80px) / 3 );
+  width: calc( ((100vw - 72px) - 64px) / 2 );
   border: none;
   margin: 0;
   padding: 4px;
@@ -6118,7 +6118,7 @@ body.wiki-page .side #search #searchexpando, body.comments-page .side #search #s
 }
 @media only screen and (min-width: 992px) {
   body.wiki-page .side #search #searchexpando, body.comments-page .side #search #searchexpando, body.listing-page .side #search #searchexpando {
-    width: calc( ( (100vw - 416px) - 80px ) / 3 );
+    width: calc( ( (100vw - 416px) - 64px ) / 2 );
   }
 }
 body.wiki-page .side #search #searchexpando label, body.comments-page .side #search #searchexpando label, body.listing-page .side #search #searchexpando label {
@@ -6141,7 +6141,7 @@ body.wiki-page .side .sidebox.submit, body.comments-page .side .sidebox.submit, 
   z-index: 2;
   height: 1px;
   min-height: 58px;
-  width: calc( ((100vw - 72px) - 80px) / 3 );
+  width: calc( ((100vw - 72px) - 64px) / 2 );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6149,23 +6149,18 @@ body.wiki-page .side .sidebox.submit, body.comments-page .side .sidebox.submit, 
 }
 @media only screen and (min-width: 992px) {
   body.wiki-page .side .sidebox.submit, body.comments-page .side .sidebox.submit, body.listing-page .side .sidebox.submit {
-    width: calc( ( (100vw - 416px) - 80px ) / 3 );
+    width: calc( ( (100vw - 416px) - 64px ) / 2 );
   }
 }
 body.wiki-page .side .sidebox.submit-link, body.comments-page .side .sidebox.submit-link, body.listing-page .side .sidebox.submit-link {
-  left: calc( ((100vw - 72px) / 3) - ((16px - -32px) * -1) );
-}
-@media only screen and (min-width: 992px) {
-  body.wiki-page .side .sidebox.submit-link, body.comments-page .side .sidebox.submit-link, body.listing-page .side .sidebox.submit-link {
-    left: calc( ( ((100vw - 416px)) / 3 ) - ((16px - -32px) * -1) );
-  }
+  display: none;
 }
 body.wiki-page .side .sidebox.submit.disabled, body.wiki-page .side .sidebox.submit-text, body.comments-page .side .sidebox.submit.disabled, body.comments-page .side .sidebox.submit-text, body.listing-page .side .sidebox.submit.disabled, body.listing-page .side .sidebox.submit-text {
-  left: calc( (((100vw - 72px)) / 3) * 2 - (16px * 3 * -1) );
+  left: calc( ((100vw - 72px) / 2) - ((16px - -32px) * -1) );
 }
 @media only screen and (min-width: 992px) {
   body.wiki-page .side .sidebox.submit.disabled, body.wiki-page .side .sidebox.submit-text, body.comments-page .side .sidebox.submit.disabled, body.comments-page .side .sidebox.submit-text, body.listing-page .side .sidebox.submit.disabled, body.listing-page .side .sidebox.submit-text {
-    left: calc( ( (100vw - 416px) / 3 ) * 2 - (16px * 3 * -1) );
+    left: calc( ( ((100vw - 416px)) / 2 ) - ((16px - -32px) * -1) );
   }
 }
 body.comments-page:not(.subscriber) .side #login_login-main {
@@ -6297,19 +6292,6 @@ a[href="https://www.reddit.com/r/excel/wiki/paperclip"]:after {
 #siteTable a[href*="[vba]"].title {
   color: green;
   font-weight: bold;
-}
-
-#link-desc,
-#text-desc {
-  font-size: 0px;
-}
-
-#link-desc:after,
-#text-desc:after {
-  display: block;
-  font-weight: bold;
-  content: "PLEASE READ THE GUIDELINES ABOVE OR YOUR POST MAY BE REMOVED";
-  font-size: 16px;
 }
 
 body:not(.subscriber) .down {
@@ -6511,6 +6493,9 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 #header #sr-header-area #srLeftContainer,
 #header #sr-header-area .width-clip {
   margin-top: 110px;
+}
+#header #sr-header-area #srLeftContainer {
+  margin-left: 24px;
 }
 #header #header-bottom-left {
   height: 92px;
@@ -6942,34 +6927,66 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   }
 }
 
+.link-button {
+  display: none;
+}
+
+.submit #text-desc,
+.submit #link-desc {
+  margin-top: 480px;
+}
+
+.submit_text {
+  position: absolute;
+  top: 370px;
+  height: 480px;
+  max-height: 480px;
+  width: auto !important;
+  max-width: 1441px;
+}
+
+#link-desc,
+#text-desc {
+  font-size: 0px;
+}
+
+#link-desc:after,
+#text-desc:after {
+  display: block;
+  font-weight: bold;
+  content: "PLEASE READ THE GUIDELINES ABOVE OR YOUR POST MAY BE REMOVED";
+  font-size: 16px;
+}
+
 .side .submit-text .morelink:after {
   position: absolute;
-  font-size: 18px;
-  right: 110px;
-  /* HOW FAR RIGHT IT SHOULD GO FROM THE SUBMIT BOX */
-  border: 2px solid;
-  padding: 2px;
-  width: 290px;
-  /* HOW WIDE THE BOX SHOULD BE */
-  background-color: #217346;
-  /*darkgreen;*/
-  font-weight: bold;
+  left: -40px;
+  top: 100%;
+  width: 300px;
+  background-color: #d7dfe7 ;
+  color: #292f34 ;
   content: "Read the sidebar first. Your question may already be answered in the Wiki.";
-  top: 100px;
-  /* HOW FAR UP OR DOWN IT SHOULD GO FROM THE SUBMIT BOX */
-  right: -200px;
-  /* HOW FAR RIGHT IT SHOULD MOVE FROM THE LEFT EDGE OF THE SUBMIT BOX */
-  border-radius: 10%;
-  /* ROUNDING OF BOX CORNERS */
-  height: 60px;
-  /* HOW TALL THE BOX SHOULD BE */
-  padding: 10px 10px 0;
-  /* HOW FAR UP AND DOWN THE TEXT INSIDE SHOULD BE */
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  transition: all 0ms;
+  height: 50px;
+  padding: 8px;
+  font-size: 1.5em;
+  transform: scaleY(0);
+  transition: transform 0.5s ease;
+  transform-origin: top;
+}
+@media (prefers-color-scheme: dark) {
+  .side .submit-text .morelink:after {
+    background-color: #1e2931 ;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .side .submit-text .morelink:after {
+    color: #d7dadc ;
+  }
+}
+
+.side .submit-text .morelink:hover:after {
+  z-index: 1;
+  transform: scaleY(1);
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
