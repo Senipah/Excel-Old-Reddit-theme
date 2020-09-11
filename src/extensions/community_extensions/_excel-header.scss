@@ -4,6 +4,9 @@ $_ribbon-height: 92px;
 $_snoo-margin-top: $_ribbon-height - 40px - 5px;
 
 #header {
+  .userkarma {
+    @include v.theme("color", v.$lightText);
+  }
   height: v.$header-height;
   @include v.theme("background-color", v.$navBar-backgroundColor);
   #sr-header-area {
