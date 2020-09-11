@@ -34,6 +34,7 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
     height: $_ribbon-height;
     @include v.theme("background-color", v.$ribbon-color);
     .pagename.redditname {
+      @include v.theme("color", v.$lightText);
       font-size: 18px;
       position: absolute;
       left: 50%;
@@ -80,6 +81,7 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
     }
   }
   #header-bottom-right {
+    top: 0px !important;
     @include v.theme("background-color", v.$ribbon-color);
   }
 }
