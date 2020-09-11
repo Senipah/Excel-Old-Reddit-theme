@@ -1,0 +1,37 @@
+@use '../../abstracts/mixins' as v;
+
+$_submit-text-height: 480px;
+$_submit-text-max-width: 1441px;
+
+.link-button {
+  display: none;
+}
+
+//  MOVES THE SUBMISSION TEXT TO THE TOP
+.submit #text-desc,
+.submit #link-desc {
+  margin-top: $_submit-text-height;
+}
+
+.submit_text {
+  position: absolute;
+  top: 370px;
+  height: $_submit-text-height;
+  max-height: $_submit-text-height;
+  width: auto !important;
+  max-width: $_submit-text-max-width;
+}
+
+// Hides default text - Adds text to the submission page
+#link-desc,
+#text-desc {
+  font-size: 0px;
+}
+
+#link-desc:after,
+#text-desc:after {
+  display: block;
+  font-weight: bold;
+  content: "PLEASE READ THE GUIDELINES ABOVE OR YOUR POST MAY BE REMOVED";
+  font-size: 16px;
+}
