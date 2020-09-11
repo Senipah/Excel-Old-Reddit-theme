@@ -52,13 +52,12 @@ $_images: (
   "noresults": "noresults",
   "title": "title",
   "info-shield": "info-shield",
-  "snoo": "snoo",
-  "snoo-wink": "snoo-wink",
   "clippyflair": "clippyflair",
   "excel-logo": "excel-logo",
   "excel-sidebar": "excel-sidebar",
   "light-header-img": "light-header-img",
   "dark-header-img": "dark-header-img",
+  "snoo-sprite": "snoo-sprite",
 );
 
 @function getImage($name) {
