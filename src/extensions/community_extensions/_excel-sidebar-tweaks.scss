@@ -6,6 +6,7 @@
     @include v.theme("background-color", v.$primary);
     @include v.theme("color", v.$lightText);
     text-align: center;
+    font-weight: normal;
   }
 
   #moderation_tools .title h1,

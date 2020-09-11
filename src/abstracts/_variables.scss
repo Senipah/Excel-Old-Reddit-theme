@@ -3,7 +3,7 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: true;
+$_dev: false;
 
 $base-font: Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
@@ -119,22 +119,23 @@ $_colors: (
     "spoiler": #f44336,
   ),
   "linkflair": (
+    "default": #738491,
     "waitingonop": #77bafe,
     "abandoned": #909090,
     "template": #c4abeb,
     "discussioncase": #768ba7,
     "solvedcase": #669999,
+    "pending": #ff4500,
     "approved": #ff4500,
     "showandtell": #005dff,
     "excelevent": #01723a,
     "paidservice": #ffba4e,
-    "notsolvedcase": #ffba4e,
+    "notsolvedcase": #cc6666,
     "unsolved": #cc6666,
     "protip": #b8b9c2,
     "challenge": blue,
     "solvedpoint": #008e00,
     "mod": $moderator,
-    "solvedpoint": #008e00,
     "removed": #202020,
   ),
   "code": (

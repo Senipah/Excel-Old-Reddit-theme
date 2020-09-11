@@ -1,4 +1,4 @@
-@use '../../../abstracts/mixins' as v;
+@use '../../abstracts/mixins' as v;
 
 // V1.23 25/07/2017 == SUBSCRIPT and +CODE &  SUPERSCRIPT+CODE ==
 .md em {
@@ -117,4 +117,11 @@ body:not(.subscriber) .down {
 .author[href$="Clippy_Office_Asst"] {
   color: orangered !important;
   font-weight: bold;
+}
+
+// remove header row that sorts the milestone table in sidebar
+.side .md table {
+  thead {
+    display: none;
+  }
 }
