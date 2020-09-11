@@ -51,18 +51,20 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
       }
     }
     #header-img {
-      // position: absolute;
       margin-top: $_snoo-margin-top;
-      // height: 50px;
-      // top: 40px;
     }
     .tabmenu {
       background-color: inherit;
       margin-left: 90px;
       top: 48px;
       li {
+        border: 1px solid red;
+        display: inline-block;
+        width: auto;
         a {
-          padding: 0 v.$padding;
+          margin: 0;
+          padding: 0 24px;
+          border: 1px solid white;
           line-height: 40px;
           text-transform: capitalize;
           @include v.theme("color", v.$lightText);
