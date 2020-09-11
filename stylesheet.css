@@ -266,18 +266,30 @@ a {
   border-radius: 0;
 }
 
-.commentarea .panestack-title,
-.commentarea .menuarea {
-  z-index: 0;
-}
-
 #mail.havemail:before {
-  animation-name: u9wx5q5;
+  position: fixed;
+  padding: 16px 24px;
+  bottom: 24px;
+  z-index: 100;
+  font-size: medium;
+  background: #ea4848;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+  color: #d7dadc ;
+  width: 250px;
+  height: 48px;
+  left: 32px;
+  content: "You have new messages!";
+  text-indent: 0;
+  line-height: 1;
+  -webkit-transform: translateY(112px);
+  transform: translateY(112px);
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  animation-name: uu6u4ih;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u9wx5q5 {
+@keyframes uu6u4ih {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -308,7 +320,18 @@ a {
   }
 }
 #mail.havemail:hover:before {
+  background-color: #ec5b5b;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.48);
   animation-play-state: paused;
+}
+#mail.havemail:active:before {
+  background-color: #c73d3d;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.76);
+}
+
+.commentarea .panestack-title,
+.commentarea .menuarea {
+  z-index: 0;
 }
 
 #sr-header-area {
@@ -1599,7 +1622,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: u9wx5ql;
+  animation-name: uu6u4im;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1609,7 +1632,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes u9wx5ql {
+@keyframes uu6u4im {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6580,6 +6603,11 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .side #moderation_tools .title h1,
 .side .sidecontentbox .title h1,
 .side .titlebox h1 a {
+  color: #d7dadc ;
+}
+.side #moderation_tools .title h1 em,
+.side .sidecontentbox .title h1 em,
+.side .titlebox h1 a em {
   color: #d7dadc ;
 }
 
