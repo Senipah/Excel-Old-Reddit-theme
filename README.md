@@ -1,6 +1,8 @@
 
 # /r/Excel Old Reddit CSS Theme
 
+![](/images/ExcelExample.gif)
+
 This is a theme for the /r/Excel subreddit. See https://github.com/Senipah/Old-Reddit-Sass-Theme for the upstream.
 
 To merge changes from upstream:
