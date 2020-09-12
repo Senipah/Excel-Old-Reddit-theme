@@ -284,12 +284,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: ul9078x;
+  animation-name: uzjvay6;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes ul9078x {
+@keyframes uzjvay6 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1622,7 +1622,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: ul90792;
+  animation-name: uzjvayt;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1632,7 +1632,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes ul90792 {
+@keyframes uzjvayt {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3018,7 +3018,7 @@ body > .content .link.compressed .midcol {
 .reddit-infobar.with-icon.locked-infobar {
   background: #27b062;
 }
-.reddit-infobar.with-icon.locked-infobar .md {
+.reddit-infobar.with-icon.locked-infobar .md p {
   color: #d7dadc ;
 }
 .reddit-infobar.with-icon.locked-infobar p:after {
@@ -6997,6 +6997,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   left: -40px;
   top: 100%;
   width: 300px;
+  border: 1px solid #dadada ;
   background-color: #d7dfe7 ;
   color: #292f34 ;
   content: "Read the sidebar first. Your question may already be answered in the Wiki.";
@@ -7006,6 +7007,11 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   transform: scaleY(0);
   transition: transform 0.5s ease;
   transform-origin: top;
+}
+@media (prefers-color-scheme: dark) {
+  .side .submit-text .morelink:after {
+    border: 1px solid #343536 ;
+  }
 }
 @media (prefers-color-scheme: dark) {
   .side .submit-text .morelink:after {
