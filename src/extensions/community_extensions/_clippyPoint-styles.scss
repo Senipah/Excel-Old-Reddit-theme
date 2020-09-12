@@ -28,7 +28,7 @@ $_margin: $_arrow-width + $_clippy-width + $_left-pad;
       left: ($_arrow-width + $_left-pad);
       border-radius: v.$radius;
       @include v.theme("color", v.$primary);
-      text-shadow: 0px 1px 0px #333333;
+      @include v.theme("text-shadow", v.$bodyText, false, true "0px 1px 0px");
       font-size: 150%;
       font-weight: bold;
       text-align: center;
