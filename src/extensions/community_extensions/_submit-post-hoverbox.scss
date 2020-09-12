@@ -5,6 +5,7 @@
   left: -40px;
   top: 100%;
   width: 300px;
+  @include v.theme("border", v.$highlight, false, true, "1px solid");
   @include v.theme("background-color", v.$highlight-background);
   @include v.theme("color", v.$bodyText);
   content: "Read the sidebar first. Your question may already be answered in the Wiki.";
