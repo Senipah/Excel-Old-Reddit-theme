@@ -36,7 +36,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background: #262626 ;
+    background: #030303 ;
   }
 }
 
@@ -284,12 +284,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uo2acae;
+  animation-name: unu5w4j;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uo2acae {
+@keyframes unu5w4j {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1600,12 +1600,12 @@ body:not(.subscriber) .content {
   content: " ";
   color: #ff4500;
   border-radius: 28px;
-  animation-name: uo2acb7;
+  animation-name: unu5w59;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uo2acb7 {
+@keyframes unu5w59 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3183,7 +3183,7 @@ html .viewSource textarea[readonly] {
 }
 @media (prefers-color-scheme: dark) {
   html .viewSource textarea[readonly] {
-    background: #262626 ;
+    background: #030303 ;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -4045,7 +4045,7 @@ select {
 }
 @media (prefers-color-scheme: dark) {
   select {
-    background-color: #262626 ;
+    background-color: #030303 ;
   }
 }
 select::-ms-expand {
