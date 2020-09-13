@@ -27,7 +27,7 @@ $_margin: $_arrow-width + $_clippy-width + $_left-pad;
       height: $_clippy-height;
       left: ($_arrow-width + $_left-pad);
       border-radius: v.$radius;
-      @include v.theme("color", v.$voteText-upvote);
+      color: v.getColor("vote", "upvote");
       @include v.theme("text-shadow", v.$darkText, false, true, "1px 1px 1px");
       font-size: 150%;
       font-weight: bold;
