@@ -14,14 +14,15 @@ $theme: (
   "button": #d7dadc,
   "buttonTinted50": color.scale(#d7dadc, $lightness: 50%),
   "buttonShaded80": color.scale(#d7dadc, $lightness: -80%),
-  "canvas": #262626,
-  // #262626 is the excel color ##030303 is theme color
+  "canvas": #030303,
+  // #262626 is the excel color #030303 is default theme color
   "field": #272729,
   "highlight": #17232d,
   "highlight-background": #1e2931,
   "inactive": #343536,
   "inactiveText": #d2d2d2,
   "line": #343536,
+  // #646464 is the excel color #343536 is default theme color
   "linkText": #4fbcff,
   "menu": #030303,
   "menuActiveText": #d7dadc,
@@ -35,6 +36,7 @@ $theme: (
   "primary": $_primary,
   "secondary-text": #828282,
   "separator": #343536,
+  // #646464 is the excel color #343536 is default theme color
   "sr-header": #1a1a1b,
   "titleText": #d7dadc,
   "widgetColors-sidebarWidgetBorderColor": #474748,
