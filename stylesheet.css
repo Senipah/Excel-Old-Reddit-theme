@@ -36,7 +36,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background: #030303 ;
+    background: #262626 ;
   }
 }
 
@@ -103,7 +103,7 @@ a {
   margin-top: 60px;
   height: 180px;
   border-top: 50px solid #ffffff ;
-  background: url(%%footer%%) 50% 0/cover no-repeat;
+  background: url("../images/footer.png") 50% 0/cover no-repeat;
   padding: 65px 200px 40px;
 }
 @media (prefers-color-scheme: dark) {
@@ -284,12 +284,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: ub7gml3;
+  animation-name: ufc2cku;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes ub7gml3 {
+@keyframes ufc2cku {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -578,7 +578,7 @@ a.random.choice {
   z-index: 99;
   width: 42px;
   height: 40px;
-  background-image: url(%%snoo-sprite%%);
+  background-image: url("../images/snoo-sprite.png");
   background-position: 0 0;
   vertical-align: top;
   font-size: 0;
@@ -1569,22 +1569,13 @@ body:not(.subscriber) .content {
   font-size: 12px;
   text-align: center;
   margin: 1px -100%;
+  color: #878589;
 }
 .link .score.likes {
-  color: #ff4500 ;
-}
-@media (prefers-color-scheme: dark) {
-  .link .score.likes {
-    color: #ff4500 ;
-  }
+  color: #ff4500;
 }
 .link .score.dislikes {
-  color: #7193ff ;
-}
-@media (prefers-color-scheme: dark) {
-  .link .score.dislikes {
-    color: #7193ff ;
-  }
+  color: #7193ff;
 }
 
 .arrow:hover {
@@ -1607,19 +1598,14 @@ body:not(.subscriber) .content {
   opacity: 1;
   z-index: 1;
   content: " ";
-  background: #ff4500 ;
+  color: #ff4500;
   border-radius: 28px;
-  animation-name: ub7gmlc;
+  animation-name: ufc2clr;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@media (prefers-color-scheme: dark) {
-  .arrow.upmod:focus:after {
-    background: #ff4500 ;
-  }
-}
-@keyframes ub7gmlc {
+@keyframes ufc2clr {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -1654,7 +1640,7 @@ body:not(.subscriber) .content {
   text-align: center;
   left: 24px;
   top: -4px;
-  background: #7193ff ;
+  background: #7193ff;
   color: #ffffff ;
   border-radius: 4px;
   content: "Downvoting? It's worth a comment explaining why. This is NOT a disagree button";
@@ -1664,29 +1650,12 @@ body:not(.subscriber) .content {
 }
 @media (prefers-color-scheme: dark) {
   .arrow.down:after {
-    background: #7193ff ;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .arrow.down:after {
     color: #d7dadc ;
   }
 }
 .arrow.down:hover:after {
   transform: scaleX(1);
   z-index: 2;
-  background: #7193ff ;
-  color: #ffffff ;
-}
-@media (prefers-color-scheme: dark) {
-  .arrow.down:hover:after {
-    background: #7193ff ;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .arrow.down:hover:after {
-    color: #d7dadc ;
-  }
 }
 
 .green {
@@ -3214,7 +3183,7 @@ html .viewSource textarea[readonly] {
 }
 @media (prefers-color-scheme: dark) {
   html .viewSource textarea[readonly] {
-    background: #030303 ;
+    background: #262626 ;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -3357,11 +3326,6 @@ html .RESDialogSmall > h3 {
 }
 @media (prefers-color-scheme: dark) {
   html .RESDialogSmall > h3 {
-    color: #217346 ;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  html .RESDialogSmall > h3 {
     background-color: #1a1a1b ;
   }
 }
@@ -3397,11 +3361,6 @@ html .toggleButton .toggleOn {
   border: 1px solid #4f8ef7;
   background-color: #217346 ;
   color: #ffffff ;
-}
-@media (prefers-color-scheme: dark) {
-  html .toggleButton .toggleOn {
-    background-color: #217346 ;
-  }
 }
 @media (prefers-color-scheme: dark) {
   html .toggleButton .toggleOn {
@@ -3752,11 +3711,6 @@ html .guider {
 html .guider_content h1 {
   color: #217346 ;
 }
-@media (prefers-color-scheme: dark) {
-  html .guider_content h1 {
-    color: #217346 ;
-  }
-}
 html .guider_button {
   font-size: 11px;
   border: none;
@@ -4091,7 +4045,7 @@ select {
 }
 @media (prefers-color-scheme: dark) {
   select {
-    background-color: #030303 ;
+    background-color: #262626 ;
   }
 }
 select::-ms-expand {
@@ -4169,11 +4123,6 @@ select:disabled:hover, select[aria-disabled=true]:hover {
 }
 .dropdown.lightdrop .selected:hover {
   color: #217346 ;
-}
-@media (prefers-color-scheme: dark) {
-  .dropdown.lightdrop .selected:hover {
-    color: #217346 ;
-  }
 }
 
 .drop-choices.lightdrop {
@@ -4527,7 +4476,7 @@ html .mod-toolbox-rd .menuarea.modtools {
   width: 100%;
 }
 .comments-page .usertext textarea:not(:focus) {
-  background-image: url(%%commentboxbg%%);
+  background-image: url("../images/commentboxbg.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -5122,7 +5071,7 @@ body > .content .link .rank,
   margin: 0;
   width: 100%;
   height: 416px;
-  background: transparent url(%%noresults%%) no-repeat 50% 50%;
+  background: transparent url("../images/noresults.png") no-repeat 50% 50%;
   text-indent: -9999px;
   font-size: 0;
   display: block;
@@ -5342,7 +5291,7 @@ body > .content .link .rank,
   margin: 0;
   width: 100%;
   height: 416px;
-  background: transparent url(%%noresults%%) no-repeat 50% 50%;
+  background: transparent url("../images/noresults.png") no-repeat 50% 50%;
   text-indent: -9999px;
   font-size: 0;
   display: block;
@@ -5846,16 +5795,6 @@ ul.image-preview-list li .description pre {
   color: #d7dadc ;
   border-color: #217346 ;
 }
-@media (prefers-color-scheme: dark) {
-  .content.submit .formtabs-content #newlink-with-image-upload .file-upload-button {
-    background-color: #217346 ;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .content.submit .formtabs-content #newlink-with-image-upload .file-upload-button {
-    border-color: #217346 ;
-  }
-}
 .content.submit .info-notice,
 .content.submit .infobar {
   background-color: #fbe6e8 ;
@@ -5889,11 +5828,6 @@ ul.image-preview-list li .description pre {
 .submit_text h1 span {
   text-transform: uppercase;
   color: #217346 ;
-}
-@media (prefers-color-scheme: dark) {
-  .submit_text h1 span {
-    color: #217346 ;
-  }
 }
 
 .wiki-page .wikititle {
@@ -6216,16 +6150,11 @@ body.comments-page .side {
   height: 50px;
   width: 100%;
   background-color: #217346 ;
-  background-image: url(%%excel-sidebar%%);
+  background-image: url("../images/excel-sidebar.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-indent: -9999px;
-}
-@media (prefers-color-scheme: dark) {
-  .side .titlebox h1.redditname a {
-    background-color: #217346 ;
-  }
 }
 
 body:not(.subscriber) #header::after {
@@ -6242,7 +6171,7 @@ body:not(.subscriber) #header::after {
   border-radius: 0;
   color: #444444;
   padding-left: 40px;
-  background-image: url(%%info-shield%%);
+  background-image: url("../images/info-shield.png");
   background-position: 10px center;
   background-repeat: no-repeat;
   top: 232px;
@@ -6298,7 +6227,7 @@ p.tagline em:after {
 }
 
 a[href="https://www.reddit.com/r/excel/wiki/paperclip"]:after {
-  content: url(%%paperclip%%);
+  content: url("../images/paperclip.png");
   pointer-events: none;
   cursor: default;
 }
@@ -6354,24 +6283,19 @@ body:not(.subscriber) .down {
 .commentarea .flair-points {
   background-color: transparent;
   border: none;
-  background-image: url(%%clippyflair%%);
+  background-image: url("../images/clippyflair.png");
   background-position: center;
   position: absolute;
   width: 35px;
   height: 50px;
   left: 25px;
   border-radius: 4px;
-  color: #ff4500 ;
+  color: #ff4500;
   text-shadow: 1px 1px 1px #292f34 ;
   font-size: 150%;
   font-weight: bold;
   text-align: center;
   line-height: 50px;
-}
-@media (prefers-color-scheme: dark) {
-  .commentarea .flair-points {
-    color: #ff4500 ;
-  }
 }
 .commentarea .flair-points::after {
   content: "ClippyPoints Awarded:  " attr(title);
@@ -6440,14 +6364,6 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
     border-color: #d7dadc ;
   }
 }
-@media (prefers-color-scheme: dark) {
-  .titlebox .flair-points,
-.link .entry .tagline .flair-points,
-.sidecontentbox .flair-points,
-.linkflair .flair-points {
-    background: #217346 ;
-  }
-}
 .titlebox .flair-points::before,
 .link .entry .tagline .flair-points::before,
 .sidecontentbox .flair-points::before,
@@ -6514,7 +6430,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   height: 140px;
   color: #292f34 ;
   background-color: #f3f3f3 ;
-  background-image: url(%%light-header-img%%);
+  background-image: url("../images/light-header-img.png");
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 1916px 107px;
@@ -6526,7 +6442,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 @media (prefers-color-scheme: dark) {
   #header #sr-header-area {
-    background-image: url(%%dark-header-img%%);
+    background-image: url("../images/dark-header-img.png");
   }
 }
 #header #sr-header-area #RESShortcutsEditContainer,
@@ -6620,11 +6536,6 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   color: #d7dadc ;
   text-align: center;
   font-weight: normal;
-}
-@media (prefers-color-scheme: dark) {
-  .side h1 {
-    background-color: #217346 ;
-  }
 }
 .side #moderation_tools .title h1,
 .side .sidecontentbox .title h1,
@@ -6726,7 +6637,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 
 .post-submitter .commentarea > .usertext textarea:not(:focus) {
-  background-image: url(%%comment-area-bg2%%);
+  background-image: url("../images/comment-area-bg2.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -7029,11 +6940,6 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   transform: scaleY(0);
   transition: transform 0.5s ease;
   transform-origin: top;
-}
-@media (prefers-color-scheme: dark) {
-  .side .submit-text .morelink:after {
-    border: 1px solid #217346 ;
-  }
 }
 @media (prefers-color-scheme: dark) {
   .side .submit-text .morelink:after {
