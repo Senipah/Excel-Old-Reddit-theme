@@ -52,9 +52,6 @@ $_book-name-margin-top: 5px;
         color: #fff;
         font-weight: normal;
         line-height: 20px;
-        // font-size: 14px;
-        // font-stretch: semi-condensed;
-        font-variant-caps: normal;
         text-transform: capitalize;
         &::before {
           content: "Book1    -    ";
