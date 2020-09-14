@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: ul59h52;
+  animation-name: ufa4ktw;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes ul59h52 {
+@keyframes ufa4ktw {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1588,12 +1588,12 @@ body:not(.subscriber) .content {
   content: " ";
   color: #ff4500;
   border-radius: 28px;
-  animation-name: ul59h5i;
+  animation-name: ufa4ku4;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes ul59h5i {
+@keyframes ufa4ku4 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -4657,6 +4657,9 @@ body > .content .link .rank,
   display: none;
 }
 
+.thing.link.stickied {
+  border-left: 4px solid #27b062;
+}
 .thing.link.stickied a.title,
 .thing.link.stickied li a,
 .thing.link.stickied .entry li .comments {
@@ -6455,6 +6458,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 #header #header-bottom-left .pagename.redditname {
   font-size: 14px;
+  color: #fff;
   position: absolute;
   left: 50%;
   top: 5px;
@@ -6464,7 +6468,6 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   color: #fff;
   font-weight: normal;
   line-height: 20px;
-  font-variant-caps: normal;
   text-transform: capitalize;
 }
 #header #header-bottom-left .pagename.redditname a::before {
@@ -6760,6 +6763,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .side .titlebox .md ul li blockquote p:nth-child(1) > a:hover {
   background: #47ff47;
   border: 1px solid #47ff47;
+  color: #292f34 ;
 }
 .side .titlebox .md ul li blockquote p:nth-child(2) > a {
   background: #cc6666;
@@ -6772,6 +6776,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .side .titlebox .md ul li blockquote p:nth-child(2) > a:hover {
   background: #e6b3b3;
   border: 1px solid #e6b3b3;
+  color: #292f34 ;
 }
 .side .titlebox .md ul li blockquote p:nth-child(3) > a {
   background: #768ba7;
@@ -6784,6 +6789,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .side .titlebox .md ul li blockquote p:nth-child(3) > a:hover {
   background: #bbc5d3;
   border: 1px solid #bbc5d3;
+  color: #292f34 ;
 }
 .side .titlebox .md ul li blockquote p:nth-child(4) > a {
   background: #b8b9c2;
@@ -6796,6 +6802,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .side .titlebox .md ul li blockquote p:nth-child(4) > a:hover {
   background: #dcdce1;
   border: 1px solid #dcdce1;
+  color: #292f34 ;
 }
 .side .titlebox .md ul li blockquote p:nth-child(5) > a {
   background: #005dff;
@@ -6808,6 +6815,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .side .titlebox .md ul li blockquote p:nth-child(5) > a:hover {
   background: #80aeff;
   border: 1px solid #80aeff;
+  color: #292f34 ;
 }
 .side .titlebox .md ul li blockquote p a {
   background: #217346 ;
@@ -6895,7 +6903,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 
 .submit_text {
   position: absolute;
-  top: 370px;
+  top: 295px;
   height: 480px;
   max-height: 480px;
   width: auto !important;
