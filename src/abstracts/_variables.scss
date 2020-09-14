@@ -3,7 +3,7 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: false;
+$_dev: true;
 
 $base-font: Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
@@ -15,7 +15,7 @@ $title-case: uppercase;
 
 $radius: 4px;
 $subreddits-bar-height: 24px;
-$header-height: 232px;
+$header-height: 157px;
 $header-bottom-left-height: 96px;
 $header-bottom-left: $header-height - $header-bottom-left-height;
 $tabmenu-height: 42px;
@@ -53,6 +53,8 @@ $_images: (
   "snoo-sprite": "snoo-sprite",
   "paperclip": "paperclip",
   "comment-area-bg2": "comment-area-bg2",
+  "light-header-img-small": "light-header-img-small",
+  "dark-header-img-small": "dark-header-img-small",
 );
 
 @function getImage($name) {

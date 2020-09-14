@@ -1,7 +1,8 @@
 @use '../../abstracts/mixins' as v;
 
-$_ribbon-height: 92px;
+$_ribbon-height: 64px;
 $_snoo-margin-top: $_ribbon-height - 40px - 5px;
+$_book-name-margin-top: 5px;
 
 #header {
   .userkarma {
@@ -9,25 +10,30 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
   }
   height: v.$header-height;
   @include v.theme("background-color", v.$navBar-backgroundColor);
+  border-bottom: 1px solid #d2d2d2;
+  // @include v.theme("border-bottom", v.$line, false, true, "1px solid");
   #sr-header-area {
     position: absolute;
     top: $_ribbon-height;
     width: 100%;
-    height: 140px;
+    height: v.$header-height - $_ribbon-height;
     @include v.theme("color", v.$darkText);
     @include v.theme("background-color", v.$navBar-backgroundColor);
-    background-image: v.getImage("light-header-img");
+    background-image: v.getImage("light-header-img-small");
     @media (prefers-color-scheme: dark) {
-      background-image: v.getImage("dark-header-img");
+      background-image: v.getImage("dark-header-img-small");
     }
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 1916px 107px;
+    background-size: auto 75px;
     #RESShortcutsEditContainer,
     #RESShortcutsViewport,
     #srLeftContainer,
     .width-clip {
-      margin-top: 110px;
+      margin-top: (v.$header-height - $_ribbon-height) - 20px;
+      .redesign-beta-optin {
+        margin: 0;
+      }
     }
     #srLeftContainer {
       margin-left: v.$container-margin-hor;
@@ -37,17 +43,22 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
     height: $_ribbon-height;
     @include v.theme("background-color", v.$ribbon-color);
     .pagename.redditname {
-      @include v.theme("color", v.$lightText);
-      font-size: 18px;
+      font-size: 14px;
       position: absolute;
       left: 50%;
-      top: 5px;
+      top: $_book-name-margin-top;
       transform: translateX(-50px);
       a {
-        @include v.theme("color", v.$lightText);
+        color: #fff;
         font-weight: normal;
         line-height: 20px;
+        // font-size: 14px;
+        // font-stretch: semi-condensed;
+        font-variant-caps: normal;
         text-transform: capitalize;
+        &::before {
+          content: "Book1    -    ";
+        }
       }
     }
     #header-img {
@@ -55,36 +66,41 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
     }
     .tabmenu {
       background-color: inherit;
-      margin-left: 90px;
-      top: 48px;
+      margin-left: 91px;
+      padding: 0;
+      top: $_ribbon-height - 40px;
       li {
         display: inline-block;
         width: auto;
         a {
           margin: 0;
-          padding: 0 24px;
-          line-height: 40px;
+          margin-top: 1px;
+          padding: 0 v.$padding;
+          line-height: 30px;
           text-transform: capitalize;
-          @include v.theme("color", v.$lightText);
+          color: #fff;
           font-weight: normal;
-          font-size: 18px;
+          font-size: 14px;
         }
         &.selected a {
           @include v.theme("background-color", v.$navBar-backgroundColor);
-          font-weight: bold;
-          @include v.theme("color", v.$bodyText);
+          @include v.theme("color", v.$primary);
           @include v.theme(
             "border-bottom",
             v.$navBar-backgroundColor,
             false,
             true "2px solid"
           );
+          @media (prefers-color-scheme: dark) {
+            color: #fff;
+          }
         }
       }
     }
   }
   #header-bottom-right {
-    top: 0px !important;
-    @include v.theme("background-color", v.$ribbon-color);
+    top: $_book-name-margin-top !important;
+    background-color: transparent !important;
+    margin-right: 8px;
   }
 }
