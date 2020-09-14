@@ -284,12 +284,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: unu5w4j;
+  animation-name: uahp7hq;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes unu5w4j {
+@keyframes uahp7hq {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1600,12 +1600,12 @@ body:not(.subscriber) .content {
   content: " ";
   color: #ff4500;
   border-radius: 28px;
-  animation-name: unu5w59;
+  animation-name: uahp7i5;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes unu5w59 {
+@keyframes uahp7i5 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -5961,9 +5961,6 @@ ul.image-preview-list li .description pre {
   .wiki-page .wiki-page-content em {
     color: #828282 ;
   }
-}
-.wiki-page .wiki-page-content .wikirevisionlisting table tr:hover {
-  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .flairtoggle,
