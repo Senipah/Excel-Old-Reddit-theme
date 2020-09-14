@@ -276,6 +276,7 @@ $_breakpoints: (
   &:hover {
     background: color.scale($baseColor, $lightness: 50%);
     border: 1px solid color.scale($baseColor, $lightness: 50%);
+    @include theme("color", v.$darkText);
   }
 }
 
