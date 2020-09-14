@@ -15,7 +15,7 @@ $_submit-text-max-width: 1441px;
 
 .submit_text {
   position: absolute;
-  top: 370px;
+  top: v.$header-height + 138px;
   height: $_submit-text-height;
   max-height: $_submit-text-height;
   width: auto !important;
