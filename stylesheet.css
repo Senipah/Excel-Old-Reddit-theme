@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: ufa4ktw;
+  animation-name: uzrd5gi;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes ufa4ktw {
+@keyframes uzrd5gi {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1588,12 +1588,12 @@ body:not(.subscriber) .content {
   content: " ";
   color: #ff4500;
   border-radius: 28px;
-  animation-name: ufa4ku4;
+  animation-name: uzrd5h1;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes ufa4ku4 {
+@keyframes uzrd5h1 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -4645,6 +4645,7 @@ body.listing-page > .content, body.other-discussions-page > .content {
   border-radius: 0;
   margin: 0;
   position: relative;
+  border-left: 4px solid transparent;
 }
 @media (prefers-color-scheme: dark) {
   .link {
