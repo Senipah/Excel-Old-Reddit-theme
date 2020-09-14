@@ -44,6 +44,7 @@ $_book-name-margin-top: 5px;
     @include v.theme("background-color", v.$ribbon-color);
     .pagename.redditname {
       font-size: 14px;
+      color: #fff;
       position: absolute;
       left: 50%;
       top: $_book-name-margin-top;
