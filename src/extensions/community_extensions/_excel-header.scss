@@ -46,9 +46,12 @@ $_book-name-margin-top: 5px;
       font-size: 14px;
       color: #fff;
       position: absolute;
-      left: 50%;
+      left: 25%;
       top: $_book-name-margin-top;
       transform: translateX(-50px);
+      @include v.respond-to(v.$breakpoint) {
+        left: 50%;
+      }
       a {
         color: #fff;
         font-weight: normal;
