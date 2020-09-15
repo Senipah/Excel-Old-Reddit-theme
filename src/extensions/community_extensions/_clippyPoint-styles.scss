@@ -124,6 +124,9 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 // Bot User Flair
 
 .flair-paperclip:after {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   content: "";
   background: v.getImage("paperclip") 0 0 no-repeat;
 }
