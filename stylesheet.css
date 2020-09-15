@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uwyk0fb;
+  animation-name: uk3scg0;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uwyk0fb {
+@keyframes uk3scg0 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1588,12 +1588,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uwyk0ft;
+  animation-name: uk3scgk;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uwyk0ft {
+@keyframes uk3scgk {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6399,6 +6399,11 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 .linkflair .flair-points:hover::before {
   width: 115px !important;
   transform: scaleX(1);
+}
+
+.flair-paperclip:after {
+  content: "";
+  background: url(%%paperclip%%) 0 0 no-repeat;
 }
 
 #header {
