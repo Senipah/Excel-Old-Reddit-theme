@@ -49,7 +49,7 @@ $_book-name-margin-top: 5px;
       left: 25%;
       top: $_book-name-margin-top;
       transform: translateX(-50px);
-      @include v.respond-to(v.$breakpoint) {
+      @include v.respond-to("medium") {
         left: 50%;
       }
       a {

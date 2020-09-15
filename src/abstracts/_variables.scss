@@ -3,7 +3,7 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: true;
+$_dev: false;
 
 $base-font: "Segoe UI", Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
@@ -27,8 +27,6 @@ $padding: 16px;
 $button-height: 36px;
 
 $subscription-prompt-height: 30px;
-
-$breakpoint: "large";
 
 // Sidebar vars
 $titlebox-height: 76px;

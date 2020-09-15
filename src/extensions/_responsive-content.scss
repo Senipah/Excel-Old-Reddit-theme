@@ -4,6 +4,8 @@ $_search-height: 58px;
 // $_element-count: 3;
 $_element-count: 2; // changed to 2 for /r/excel
 
+$_breakpoint: "large";
+
 // IE11 doesnt support nested calcs.
 // sass interpolation strips meaningful whitespace
 // hence awful lack of reuse here
@@ -84,7 +86,7 @@ body {
       max-width: $_content-width-small;
       overflow: hidden;
       margin-top: $_search-height + v.$container-margin-vert * 2;
-      @include v.respond-to(v.$breakpoint) {
+      @include v.respond-to($_breakpoint) {
         max-width: $_content-width-large;
       }
     }
@@ -93,7 +95,7 @@ body {
       width: 0;
       border: none;
       @include v.pargin(0);
-      @include v.respond-to(v.$breakpoint) {
+      @include v.respond-to($_breakpoint) {
         visibility: visible;
         width: v.$sidebar-width;
         margin: v.$container-margin-vert v.$container-margin-hor 108px 0;
@@ -117,13 +119,13 @@ body {
         width: $_content-width-small;
         padding: 8px 16px;
 
-        @include v.respond-to(v.$breakpoint) {
+        @include v.respond-to($_breakpoint) {
           width: $_content-width-large;
         }
 
         input {
           width: $_element-width-small;
-          @include v.respond-to(v.$breakpoint) {
+          @include v.respond-to($_breakpoint) {
             width: $_element-width-large;
           }
 
@@ -154,7 +156,7 @@ body {
           padding: 4px;
           height: auto;
           box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-          @include v.respond-to(v.$breakpoint) {
+          @include v.respond-to($_breakpoint) {
             width: $_element-width-large;
           }
           label {
@@ -187,12 +189,12 @@ body {
         justify-content: center;
         align-items: center;
         -ms-flex-align: center;
-        @include v.respond-to(v.$breakpoint) {
+        @include v.respond-to($_breakpoint) {
           width: $_element-width-large;
         }
         &-link {
           // left: $_submit-link-left-small;
-          // @include v.respond-to(v.$breakpoint) {
+          // @include v.respond-to($_breakpoint) {
           //   left: $_submit-link-left-large;
           // }
         }
@@ -200,7 +202,7 @@ body {
         &-text {
           // left: $_submit-text-left-small;
           left: $_submit-link-left-small; // /r/excel hides link
-          @include v.respond-to(v.$breakpoint) {
+          @include v.respond-to($_breakpoint) {
             // left: $_submit-text-left-large; ///r/excel hides link
             left: $_submit-link-left-large;
           }
