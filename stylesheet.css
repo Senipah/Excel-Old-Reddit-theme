@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: u7kqr54;
+  animation-name: u41q6pq;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u7kqr54 {
+@keyframes u41q6pq {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1579,21 +1579,21 @@ body:not(.subscriber) .content {
 }
 .arrow.upmod:focus:after {
   position: absolute;
-  left: -6px;
-  bottom: 0px;
+  left: -7px;
+  top: -7px;
   width: 28px;
   height: 28px;
   opacity: 1;
   z-index: 1;
   content: " ";
-  color: #ff4500;
+  background-color: #ff4500;
   border-radius: 28px;
-  animation-name: u7kqr59;
+  animation-name: u41q6qd;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes u7kqr59 {
+@keyframes u41q6qd {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -5706,6 +5706,9 @@ ul.image-preview-list li .description pre {
 }
 .content.submit ul.tabmenu li.selected a:active {
   margin: 16px 16px 16px 0;
+}
+.content.submit span.little.gray.roundfield-description {
+  display: none;
 }
 .content.submit .formtabs-content {
   border-top: 4px solid #c8c6cc ;
