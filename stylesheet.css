@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: u41q6pq;
+  animation-name: uwyk0fb;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u41q6pq {
+@keyframes uwyk0fb {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1588,12 +1588,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: u41q6qd;
+  animation-name: uwyk0ft;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes u41q6qd {
+@keyframes uwyk0ft {
   0% {
     transform: scale(0, 0);
     opacity: 1;
