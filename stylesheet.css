@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uorry36;
+  animation-name: u35cazb;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uorry36 {
+@keyframes u35cazb {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1588,12 +1588,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uorry3w;
+  animation-name: u35cazv;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uorry3w {
+@keyframes u35cazv {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3188,12 +3188,14 @@ html.res-commentBoxes body > .content {
   padding-right: 16px !important;
 }
 html .res-filterline,
-html .subredditInfoToolTip {
+html .subredditInfoToolTip,
+html .commentarea .res-expando-box div.usertext-body .md {
   background-color: #ffffff ;
 }
 @media (prefers-color-scheme: dark) {
   html .res-filterline,
-html .subredditInfoToolTip {
+html .subredditInfoToolTip,
+html .commentarea .res-expando-box div.usertext-body .md {
     background-color: #1a1a1b ;
   }
 }
@@ -4188,15 +4190,19 @@ table tbody tr {
 table tbody tr:nth-child(odd) {
   background-color: #d9e1f2;
 }
-table tbody tr td {
+table tbody tr td,
+table tbody tr th {
   color: #000;
   border: 1px solid #8ea9db !important;
 }
-table tbody tr td a {
+table tbody tr td a,
+table tbody tr th a {
   color: #0563c1 !important;
 }
 table tbody tr td span,
-table tbody tr td label {
+table tbody tr td label,
+table tbody tr th span,
+table tbody tr th label {
   color: #000;
 }
 
