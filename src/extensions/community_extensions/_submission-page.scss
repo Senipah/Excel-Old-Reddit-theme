@@ -1,7 +1,8 @@
 @use '../../abstracts/mixins' as v;
 
 $_submit-text-height: 480px;
-$_submit-text-max-width: 1441px;
+// $_submit-text-max-width: 1441px;
+$_submit-text-max-width: calc(100vw - #{v.$sidebar-width + 157px});
 
 .link-button {
   display: none;
@@ -18,8 +19,9 @@ $_submit-text-max-width: 1441px;
   top: v.$header-height + 138px;
   height: $_submit-text-height;
   max-height: $_submit-text-height;
-  width: auto !important;
+  width: 100% !important;
   max-width: $_submit-text-max-width;
+  overflow-y: auto;
 }
 
 // Hides default text - Adds text to the submission page
