@@ -21,6 +21,7 @@ $header-bottom-left-height: 96px;
 $header-bottom-left: $header-height - $header-bottom-left-height;
 // $tabmenu-height: 42px; - default. increased due to segoe font
 $tabmenu-height: 44px;
+$header-inner-height: $header-height - $subreddits-bar-height - $tabmenu-height;
 
 $sidebar-width: 320px;
 $container-margin-vert: 20px;
