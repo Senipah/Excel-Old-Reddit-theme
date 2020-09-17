@@ -85,16 +85,12 @@ $_book-name-margin-top: 5px;
         }
         &.selected a {
           @include v.theme("background-color", v.$navBar-backgroundColor);
-          @include v.theme("color", v.$primary);
           @include v.theme(
             "border-bottom",
             v.$navBar-backgroundColor,
             false,
             true "2px solid"
           );
-          @media (prefers-color-scheme: dark) {
-            color: #fff;
-          }
         }
       }
     }
