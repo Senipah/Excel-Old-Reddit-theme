@@ -2,8 +2,8 @@
 
 .side .submit-text .morelink:after {
   position: absolute;
-  // left: -40px; // for using responsive content
-  left: 10px; // normal
+  left: -40px; // for using responsive content
+  // left: 10px; // normal
   top: 100%;
   width: 300px;
   @include v.theme("border", v.$primary, false, true, "1px solid");
