@@ -30,7 +30,6 @@ $_img-margin-top: (v.$header-inner-height - $_hdr-img-height) / 2;
         position: absolute;
         height: $_hdr-img-height;
         width: $_hdr-img-width;
-        left: -50%;
         z-index: -1;
         background-image: v.getImage("excel-logo");
         background-size: contain;
