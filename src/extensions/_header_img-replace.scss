@@ -1,9 +1,10 @@
 @use '../abstracts/mixins' as v;
 
 // This is the one in the header
-$_hdr-img-width: 300px;
+// $_hdr-img-width: 300px;
 $_img-pad: 5px;
 $_hdr-img-height: v.$header-inner-height - ($_img-pad * 2);
+$_hdr-img-width: $_hdr-img-height;
 $_img-margin-top: (v.$header-inner-height - $_hdr-img-height) / 2;
 
 #header {
@@ -23,10 +24,26 @@ $_img-margin-top: (v.$header-inner-height - $_hdr-img-height) / 2;
       width: $_hdr-img-width;
       position: relative;
       left: calc(50% - #{$_hdr-img-width / 2});
-      background-image: v.getImage("excel-logo");
-      background-size: contain;
-      background-repeat: no-repeat;
       text-indent: -9999px;
+      &::before {
+        content: "";
+        position: absolute;
+        height: $_hdr-img-height;
+        width: $_hdr-img-width;
+        left: -50%;
+        z-index: -1;
+        background-image: v.getImage("excel-logo");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &:hover {
+        &::before {
+          content: "";
+          transform: scale(-1) rotate(540deg);
+          transition: transform 0.5s ease-in-out;
+        }
+      }
     }
   }
 }
