@@ -69,7 +69,7 @@ $_book-name-margin-top: 5px;
       background-color: inherit;
       margin-left: 91px;
       padding: 0;
-      top: $_ribbon-height - v.$tabmenu-height + 3px;
+      top: $_ribbon-height - v.$tabmenu-height;
       li {
         display: inline-block;
         width: auto;
@@ -77,7 +77,7 @@ $_book-name-margin-top: 5px;
           margin: 0;
           margin-top: 1px;
           padding: 0 v.$padding;
-          line-height: 30px;
+          line-height: v.$tabmenu-height;
           text-transform: capitalize;
           color: #fff;
           font-weight: normal;
