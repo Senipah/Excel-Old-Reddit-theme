@@ -3,7 +3,8 @@
 
 // rest
 @use 'clippyPoint-styles';
-@use 'excel-header';
+// @use 'excel-header';
+@use 'alt-excel-header.scss';
 @use 'excel-sidebar-tweaks';
 @use 'linkflair';
 @use 'misc_excel_styles';
