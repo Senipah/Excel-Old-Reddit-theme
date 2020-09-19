@@ -1,0 +1,110 @@
+@use '../../abstracts/mixins' as v;
+
+$_ribbon-height: 64px;
+$_snoo-margin-top: $_ribbon-height - 40px - 5px;
+$_book-name-margin-top: 5px;
+
+$_img-pad: 5px;
+$_srList-height: 23px;
+$_custom-inner-height: (v.$header-height - $_ribbon-height - $_srList-height);
+$_hdr-img-height: $_custom-inner-height - ($_img-pad * 2);
+$_hdr-img-width: $_hdr-img-height;
+$_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
+
+#header {
+  .userkarma {
+    @include v.theme("color", v.$lightText);
+  }
+  height: v.$header-height;
+  @include v.theme("background-color", v.$navBar-backgroundColor);
+  border-bottom: 1px solid #d2d2d2;
+  // @include v.theme("border-bottom", v.$line, false, true, "1px solid");
+  #sr-header-area {
+    position: absolute;
+    top: $_ribbon-height;
+    width: 100%;
+    height: v.$header-height - $_ribbon-height;
+    @include v.theme("color", v.$darkText);
+    @include v.theme("background-color", v.$primary);
+    // background-image: v.getImage("light-header-img-small");
+    // @media (prefers-color-scheme: dark) {
+    //   background-image: v.getImage("dark-header-img-small");
+    // }
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 75px;
+    #RESShortcutsEditContainer,
+    #RESShortcutsViewport,
+    #srLeftContainer,
+    .width-clip {
+      margin-top: (v.$header-height - $_ribbon-height) - 20px;
+      .redesign-beta-optin {
+        margin: 0;
+      }
+    }
+    #srLeftContainer {
+      margin-left: v.$container-margin-hor;
+    }
+  }
+  #header-bottom-left {
+    height: $_ribbon-height;
+    @include v.theme("background-color", v.$ribbon-color);
+    .pagename.redditname {
+      font-size: 14px;
+      color: #fff;
+      position: absolute;
+      left: 25%;
+      top: $_book-name-margin-top;
+      transform: translateX(-50px);
+      @include v.respond-to("medium") {
+        left: 50%;
+      }
+      a {
+        color: #fff;
+        font-weight: normal;
+        line-height: 20px;
+        text-transform: capitalize;
+        &::before {
+          content: "Book1    -    ";
+        }
+      }
+    }
+    #header-img {
+      margin-top: $_snoo-margin-top;
+    }
+    .tabmenu {
+      background-color: inherit;
+      margin-left: 91px;
+      padding: 0;
+      top: $_ribbon-height - v.$tabmenu-height + 3px;
+      li {
+        display: inline-block;
+        width: auto;
+        a {
+          margin: 0;
+          margin-top: 1px;
+          padding: 0 v.$padding;
+          line-height: 30px;
+          text-transform: capitalize;
+          color: #fff;
+          font-weight: normal;
+          font-size: 14px;
+        }
+        &.selected a {
+          @include v.theme("background-color", v.$primary);
+          @include v.theme(
+            "border-bottom",
+            v.$navBar-backgroundColor,
+            false,
+            true "2px solid"
+          );
+        }
+      }
+    }
+  }
+  #header-bottom-right {
+    top: $_book-name-margin-top !important;
+    background-color: transparent !important;
+    margin-right: 8px;
+  }
+}
