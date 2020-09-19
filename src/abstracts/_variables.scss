@@ -55,8 +55,8 @@ $_images: (
   "snoo-sprite": "snoo-sprite",
   "paperclip": "paperclip",
   "comment-area-bg2": "comment-area-bg2",
-  "light-header-img-small": "light-header-img-small",
-  "dark-header-img-small": "dark-header-img-small",
+  "light-header-img-small": "light-header-img-small-blur",
+  "dark-header-img-small": "dark-header-img-small-blur",
 );
 
 @function getImage($name) {
