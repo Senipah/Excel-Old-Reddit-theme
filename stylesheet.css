@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: u8l29os;
+  animation-name: u8v2xcb;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u8l29os {
+@keyframes u8v2xcb {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -458,7 +458,7 @@ a.random.choice {
 
 #header-bottom-left {
   position: absolute;
-  height: 112px;
+  height: 133px;
   overflow: hidden;
   width: 100%;
 }
@@ -467,7 +467,7 @@ a.random.choice {
   margin-top: 0;
   display: block;
   position: absolute;
-  top: 77px;
+  top: 98px;
   height: 35px;
   line-height: 35px;
   border: none;
@@ -539,7 +539,7 @@ a.random.choice {
 
 #header {
   margin: 0;
-  height: 136px;
+  height: 157px;
   border: none;
   border-radius: 0px;
   background: #217346 ;
@@ -547,12 +547,12 @@ a.random.choice {
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
 }
 #header .pagename {
-  height: 77px;
+  height: 98px;
   font-size: 2rem;
 }
 #header .pagename a {
   display: inline-block;
-  line-height: 77px;
+  line-height: 98px;
   color: #292f34 ;
   text-transform: uppercase;
 }
@@ -563,7 +563,7 @@ a.random.choice {
 }
 
 #header-img.default-header {
-  margin-top: 18.5px;
+  margin-top: 29px;
   margin-left: 24px;
   z-index: 99;
   width: 42px;
@@ -1310,7 +1310,7 @@ body:not(.subscriber).comments-page .side, body:not(.subscriber).other-discussio
   margin-top: 168px;
 }
 body:not(.subscriber).comments-page .side .linkinfo, body:not(.subscriber).other-discussions-page .side .linkinfo {
-  top: 186px;
+  top: 207px;
 }
 body:not(.subscriber) .side {
   margin-top: 50px;
@@ -1323,7 +1323,7 @@ body:not(.subscriber) .side {
 .comments-page .side .linkinfo,
 .other-discussions-page .side .linkinfo {
   position: absolute;
-  top: 156px;
+  top: 177px;
   padding: 16px;
   width: 320px;
   height: 98px;
@@ -1590,12 +1590,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: u8l29pm;
+  animation-name: u8v2xcx;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes u8l29pm {
+@keyframes u8v2xcx {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6017,7 +6017,7 @@ body.wiki-page:not(.subscriber) .side .sidebox.submit,
 body.wiki-page:not(.subscriber) .side #search, body.comments-page:not(.subscriber) .side .sidebox.submit,
 body.comments-page:not(.subscriber) .side #search, body.listing-page:not(.subscriber) .side .sidebox.submit,
 body.listing-page:not(.subscriber) .side #search {
-  top: 186px;
+  top: 207px;
 }
 body.wiki-page div.content, body.comments-page div.content, body.listing-page div.content {
   position: relative;
@@ -6056,7 +6056,7 @@ body.wiki-page .side #search, body.comments-page .side #search, body.listing-pag
   position: absolute;
   z-index: 1;
   left: 24px;
-  top: 156px;
+  top: 177px;
   height: 58px;
   background-color: #ffffff ;
   color: #292f34 ;
@@ -6131,7 +6131,7 @@ body.wiki-page .side #search #searchexpando p, body.comments-page .side #search 
 body.wiki-page .side .sidebox.submit, body.comments-page .side .sidebox.submit, body.listing-page .side .sidebox.submit {
   visibility: visible;
   position: absolute;
-  top: 156px;
+  top: 177px;
   z-index: 2;
   height: 1px;
   min-height: 58px;
@@ -6159,43 +6159,6 @@ body.comments-page:not(.subscriber) .side #login_login-main {
 }
 body.comments-page .side {
   margin-top: 118px;
-}
-
-#header #header-img {
-  position: relative;
-  z-index: 2;
-}
-#header .pagename {
-  position: absolute;
-  width: 100vw;
-  left: 0;
-  visibility: hidden;
-}
-#header .pagename a {
-  visibility: visible;
-  margin-top: 5px;
-  height: 67px;
-  width: 67px;
-  position: relative;
-  left: calc(50% - 33.5px);
-  text-indent: -9999px;
-}
-#header .pagename a::before {
-  content: "";
-  position: absolute;
-  height: 67px;
-  width: 67px;
-  left: 0;
-  z-index: -1;
-  background-image: url(%%excel-logo%%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#header .pagename a:hover::before {
-  content: "";
-  transform: scale(-1) rotate(540deg);
-  transition: transform 0.5s ease-in-out;
 }
 
 .side .titlebox h1.redditname a {
@@ -6227,12 +6190,12 @@ body:not(.subscriber) #header::after {
   background-image: url(%%info-shield%%);
   background-position: 10px center;
   background-repeat: no-repeat;
-  top: 136px;
+  top: 157px;
   border: 1px solid #e0bc80;
 }
 body:not(.subscriber) span.fancy-toggle-button.subscribe-button.toggle {
   position: absolute;
-  top: 136px;
+  top: 157px;
   left: 666px;
   margin: 0;
   padding-top: 4px;
@@ -6470,6 +6433,130 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   height: 16px;
   content: "";
   background: url(%%paperclip%%) 0 0 no-repeat;
+}
+
+#header {
+  height: 157px;
+  background-color: #f3f3f3 ;
+  border-bottom: 1px solid #d2d2d2;
+}
+#header .userkarma {
+  color: #d7dadc ;
+}
+@media (prefers-color-scheme: dark) {
+  #header {
+    background-color: #363636 ;
+  }
+}
+#header #sr-header-area {
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  height: 93px;
+  color: #292f34 ;
+  background-color: #f3f3f3 ;
+  background-image: url(%%light-header-img-small%%);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: auto 75px;
+}
+@media (prefers-color-scheme: dark) {
+  #header #sr-header-area {
+    background-color: #363636 ;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #header #sr-header-area {
+    background-image: url(%%dark-header-img-small%%);
+  }
+}
+#header #sr-header-area #RESShortcutsEditContainer,
+#header #sr-header-area #RESShortcutsViewport,
+#header #sr-header-area #srLeftContainer,
+#header #sr-header-area .width-clip {
+  margin-top: 73px;
+}
+#header #sr-header-area #RESShortcutsEditContainer .redesign-beta-optin,
+#header #sr-header-area #RESShortcutsViewport .redesign-beta-optin,
+#header #sr-header-area #srLeftContainer .redesign-beta-optin,
+#header #sr-header-area .width-clip .redesign-beta-optin {
+  margin: 0;
+}
+#header #sr-header-area #srLeftContainer {
+  margin-left: 24px;
+}
+#header #header-bottom-left {
+  height: 64px;
+  background-color: #217346 ;
+}
+@media (prefers-color-scheme: dark) {
+  #header #header-bottom-left {
+    background-color: #0a0a0a ;
+  }
+}
+#header #header-bottom-left .pagename.redditname {
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  left: 25%;
+  top: 5px;
+  transform: translateX(-50px);
+}
+@media only screen and (min-width: 768px) {
+  #header #header-bottom-left .pagename.redditname {
+    left: 50%;
+  }
+}
+#header #header-bottom-left .pagename.redditname a {
+  color: #fff;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+#header #header-bottom-left .pagename.redditname a::before {
+  content: "Book1    -    ";
+}
+#header #header-bottom-left #header-img {
+  margin-top: 19px;
+}
+#header #header-bottom-left .tabmenu {
+  background-color: inherit;
+  margin-left: 91px;
+  padding: 0;
+  top: 32px;
+}
+#header #header-bottom-left .tabmenu li {
+  display: inline-block;
+  width: auto;
+}
+#header #header-bottom-left .tabmenu li a {
+  margin: 0;
+  margin-top: 1px;
+  padding: 0 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+}
+#header #header-bottom-left .tabmenu li.selected a {
+  background-color: #f3f3f3 ;
+  border-bottom:  #f3f3f3 ;
+}
+@media (prefers-color-scheme: dark) {
+  #header #header-bottom-left .tabmenu li.selected a {
+    background-color: #363636 ;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #header #header-bottom-left .tabmenu li.selected a {
+    border-bottom:  #363636 ;
+  }
+}
+#header #header-bottom-right {
+  top: 5px !important;
+  background-color: transparent !important;
+  margin-right: 8px;
 }
 
 .side h1 {
@@ -6853,7 +6940,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 
 .submit_text {
   position: absolute;
-  top: 274px;
+  top: 295px;
   height: 480px;
   max-height: 480px;
   width: 100% !important;
