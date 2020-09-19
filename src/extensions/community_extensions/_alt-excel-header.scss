@@ -5,7 +5,7 @@ $_snoo-margin-top: $_ribbon-height - 40px - 5px;
 $_book-name-margin-top: 5px;
 
 $_img-pad: 5px;
-$_srList-height: 23px;
+$_srList-height: 18px;
 $_custom-inner-height: (v.$header-height - $_ribbon-height - $_srList-height);
 $_hdr-img-height: $_custom-inner-height - ($_img-pad * 2);
 $_hdr-img-width: $_hdr-img-height;
@@ -17,19 +17,13 @@ $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
   }
   height: v.$header-height;
   @include v.theme("background-color", v.$navBar-backgroundColor);
-  border-bottom: 1px solid #d2d2d2;
-  // @include v.theme("border-bottom", v.$line, false, true, "1px solid");
   #sr-header-area {
     position: absolute;
     top: $_ribbon-height;
     width: 100%;
     height: v.$header-height - $_ribbon-height;
     @include v.theme("color", v.$darkText);
-    @include v.theme("background-color", v.$primary);
-    // background-image: v.getImage("light-header-img-small");
-    // @media (prefers-color-scheme: dark) {
-    //   background-image: v.getImage("dark-header-img-small");
-    // }
+    @include v.theme("background-color", v.$alt-navBar-backgroundColor);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: auto 75px;
@@ -49,23 +43,41 @@ $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
   #header-bottom-left {
     height: $_ribbon-height;
     @include v.theme("background-color", v.$ribbon-color);
+    overflow: visible;
     .pagename.redditname {
-      font-size: 14px;
-      color: #fff;
       position: absolute;
-      left: 25%;
-      top: $_book-name-margin-top;
+      left: 50%;
+      top: $_ribbon-height;
+      height: $_custom-inner-height;
+      width: $_custom-inner-height;
       transform: translateX(-50px);
-      @include v.respond-to("medium") {
-        left: 50%;
-      }
+      visibility: hidden;
       a {
-        color: #fff;
-        font-weight: normal;
-        line-height: 20px;
-        text-transform: capitalize;
+        visibility: visible;
+        margin-top: $_img-margin-top;
+        height: $_hdr-img-height;
+        width: $_hdr-img-width;
+        position: relative;
+        left: calc(50% - #{$_hdr-img-width / 2});
+        text-indent: -9999px;
         &::before {
-          content: "Book1    -    ";
+          content: "";
+          position: absolute;
+          height: $_hdr-img-height;
+          width: $_hdr-img-width;
+          left: 0;
+          z-index: -1;
+          background-image: v.getImage("excel-logo");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &:hover {
+          &::before {
+            content: "";
+            transform: scale(-1) rotate(540deg);
+            transition: transform 0.5s ease-in-out;
+          }
         }
       }
     }
@@ -76,7 +88,7 @@ $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
       background-color: inherit;
       margin-left: 91px;
       padding: 0;
-      top: $_ribbon-height - v.$tabmenu-height + 3px;
+      top: $_ribbon-height - v.$tabmenu-height;
       li {
         display: inline-block;
         width: auto;
@@ -84,20 +96,21 @@ $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
           margin: 0;
           margin-top: 1px;
           padding: 0 v.$padding;
-          line-height: 30px;
+          line-height: v.$tabmenu-height;
           text-transform: capitalize;
           color: #fff;
           font-weight: normal;
           font-size: 14px;
         }
         &.selected a {
-          @include v.theme("background-color", v.$primary);
+          @include v.theme("background-color", v.$alt-navBar-backgroundColor);
           @include v.theme(
             "border-bottom",
             v.$navBar-backgroundColor,
             false,
             true "2px solid"
           );
+          @include v.theme("color", v.$alt-navBar-selected);
         }
       }
     }
