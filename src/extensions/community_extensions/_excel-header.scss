@@ -91,6 +91,7 @@ $_book-name-margin-top: 5px;
             false,
             true "2px solid"
           );
+          @include v.theme("color", v.$alt-navBar-selected);
         }
       }
     }
