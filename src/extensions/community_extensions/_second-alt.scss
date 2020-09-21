@@ -32,13 +32,16 @@ $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
     .sr-bar a {
       color: #fff !important;
     }
+    #RESShortcutsViewport {
+      left: 600px;
+    }
     #RESShortcutsEditContainer,
     #RESShortcutsViewport,
     #srLeftContainer,
     .width-clip {
       overflow: visible;
       position: absolute;
-      top: -$_ribbon-height;
+      top: -$_ribbon-height !important;
       //   margin-top: (v.$header-height - $_ribbon-height) - 20px;
       .redesign-beta-optin {
         margin: 0;
