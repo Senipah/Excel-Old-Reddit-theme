@@ -8,6 +8,9 @@ $_hdr-img-width: $_hdr-img-height;
 $_img-margin-top: (v.$header-inner-height - $_hdr-img-height) / 2;
 
 #header {
+  background-image: v.getImage("headerimg");
+  background-position: 0 v.$subreddits-bar-height;
+  background-size: 1920px 77px;
   #header-img {
     position: relative;
     z-index: 2;
