@@ -15,8 +15,8 @@ $title-case: uppercase;
 
 $radius: 4px;
 $subreddits-bar-height: 24px;
-$header-height: 136px; // normal header size
-// $header-height: 157px; // for custom header
+// $header-height: 136px; // normal header size
+$header-height: 157px; // for custom header
 $header-bottom-left-height: 96px;
 $header-bottom-left: $header-height - $header-bottom-left-height;
 $tabmenu-height: 35px;
@@ -55,8 +55,8 @@ $_images: (
   "snoo-sprite": "snoo-sprite",
   "paperclip": "paperclip",
   "comment-area-bg2": "comment-area-bg2",
-  "light-header-img-small": "light-header-img-small-75alpha",
-  "dark-header-img-small": "dark-header-img-small-75alpha",
+  "light-header-img-small": "light-header-img-small-50alpha",
+  "dark-header-img-small": "dark-header-img-small-50alpha",
 );
 
 @function getImage($name) {

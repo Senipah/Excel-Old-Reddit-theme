@@ -5,7 +5,8 @@
   height: 800px;
   margin-top: 192px;
   padding: 528px 0 64px;
-  background: v.getImage("footer") 50% (0 / cover) no-repeat;
+  background: v.getImage("footer");
+  background-size: 1920px 130px;
 }
 
 .footer {

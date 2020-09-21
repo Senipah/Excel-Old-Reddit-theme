@@ -6,7 +6,7 @@ $_desc: "ClippyPoints Awarded:  ";
 //Clippy Point Flair styling - Comments
 
 $_clippy-height: 50px;
-$_clippy-width: 35px;
+$_clippy-width: 36px;
 $_arrow-width: 15px;
 $_left-pad: 10px;
 $_arrow-margin-left: 8.5px;
@@ -24,6 +24,9 @@ $_margin: $_arrow-width + $_clippy-width + $_left-pad + $_arrow-margin-left;
       background-image: v.getImage("clippyflair");
       background-position: center;
       position: absolute;
+      margin-right: 0;
+      padding: 0;
+      text-align: center;
       width: $_clippy-width;
       height: $_clippy-height;
       left: ($_arrow-width + $_left-pad + $_arrow-margin-left);
@@ -32,7 +35,6 @@ $_margin: $_arrow-width + $_clippy-width + $_left-pad + $_arrow-margin-left;
       @include v.theme("text-shadow", v.$darkText, false, true, "1px 1px 1px");
       font-size: 150%;
       font-weight: bold;
-      text-align: center;
       line-height: $_clippy-height;
       &::after {
         content: $_desc attr(title);
