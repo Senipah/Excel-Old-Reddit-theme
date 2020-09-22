@@ -111,3 +111,19 @@ body:not(.subscriber) .down {
     display: none;
   }
 }
+
+// Link Flair
+
+.flat-list.buttons .flairselectbtn {
+  font-size: 0px;
+}
+
+.flat-list.buttons a.flairselectbtn:before {
+  content: "Set Flair";
+  font-size: 10px;
+  color: #fff;
+  border-radius: v.$radius;
+  padding: 1px 4px;
+  margin-right: 4px;
+  @include v.theme("background-color", v.$primary);
+}

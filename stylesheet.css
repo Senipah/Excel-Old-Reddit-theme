@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: u8v2xcb;
+  animation-name: uh888dr;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes u8v2xcb {
+@keyframes uh888dr {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1590,12 +1590,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: u8v2xcx;
+  animation-name: uh888ej;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes u8v2xcx {
+@keyframes uh888ej {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3966,7 +3966,7 @@ a.pretty-button[class] {
   color: #ffffff ;
   line-height: 16px;
   transition: background-color 0.25s ease;
-  border-radius: 0;
+  border-radius: 4px;
   text-transform: uppercase;
 }
 @media (prefers-color-scheme: dark) {
@@ -4372,6 +4372,9 @@ html #tb-context-menu * textarea,
 html #tb-context-menu * input {
     color: #d7dadc ;
   }
+}
+html .reason-popup-content * {
+  color: #696969;
 }
 html .tb-general-button,
 html .tb-bracket-button,
@@ -6293,8 +6296,22 @@ body:not(.subscriber) .down {
   display: none;
 }
 
+.flat-list.buttons .flairselectbtn {
+  font-size: 0px;
+}
+
+.flat-list.buttons a.flairselectbtn:before {
+  content: "Set Flair";
+  font-size: 10px;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 4px;
+  margin-right: 4px;
+  background-color: #217346 ;
+}
+
 .commentarea .entry {
-  margin-left: 68.5px;
+  margin-left: 69.5px;
 }
 .commentarea .flair-points {
   background-color: transparent;
@@ -6302,7 +6319,10 @@ body:not(.subscriber) .down {
   background-image: url(%%clippyflair%%);
   background-position: center;
   position: absolute;
-  width: 35px;
+  margin-right: 0;
+  padding: 0;
+  text-align: center;
+  width: 36px;
   height: 50px;
   left: 33.5px;
   border-radius: 4px;
@@ -6310,14 +6330,13 @@ body:not(.subscriber) .down {
   text-shadow: 1px 1px 1px #292f34 ;
   font-size: 150%;
   font-weight: bold;
-  text-align: center;
   line-height: 50px;
 }
 .commentarea .flair-points::after {
   content: "ClippyPoints Awarded:  " attr(title);
   position: absolute;
   top: 0;
-  left: 35px;
+  left: 36px;
   font-size: 90%;
   line-height: 15px;
   margin-top: -2px;
@@ -6350,7 +6369,7 @@ body:not(.subscriber) .down {
   display: none;
 }
 .commentarea form.usertext.cloneable.warn-on-unload {
-  margin-left: 44.5px;
+  margin-left: 45.5px;
 }
 
 .commentarea .thing,
@@ -6455,7 +6474,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   height: 93px;
   color: #292f34 ;
   background-color: #f3f3f3 ;
-  background-image: url(%%light-header-img-small%%);
+  background-image: url(%%light-header-img-small-50alpha%%);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: auto 75px;
@@ -6467,7 +6486,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 }
 @media (prefers-color-scheme: dark) {
   #header #sr-header-area {
-    background-image: url(%%dark-header-img-small%%);
+    background-image: url(%%dark-header-img-small-50alpha%%);
   }
 }
 #header #sr-header-area #RESShortcutsEditContainer,
@@ -6523,7 +6542,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   background-color: inherit;
   margin-left: 91px;
   padding: 0;
-  top: 32px;
+  top: 29px;
 }
 #header #header-bottom-left .tabmenu li {
   display: inline-block;
@@ -6533,7 +6552,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   margin: 0;
   margin-top: 1px;
   padding: 0 16px;
-  line-height: 30px;
+  line-height: 35px;
   text-transform: capitalize;
   color: #fff;
   font-weight: normal;
@@ -6542,6 +6561,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 #header #header-bottom-left .tabmenu li.selected a {
   background-color: #f3f3f3 ;
   border-bottom:  #f3f3f3 ;
+  color: #217346 ;
 }
 @media (prefers-color-scheme: dark) {
   #header #header-bottom-left .tabmenu li.selected a {
@@ -6551,6 +6571,11 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 @media (prefers-color-scheme: dark) {
   #header #header-bottom-left .tabmenu li.selected a {
     border-bottom:  #363636 ;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #header #header-bottom-left .tabmenu li.selected a {
+    color: #fff ;
   }
 }
 #header #header-bottom-right {
