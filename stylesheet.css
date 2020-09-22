@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uh888dr;
+  animation-name: uegmwq6;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uh888dr {
+@keyframes uegmwq6 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1590,12 +1590,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uh888ej;
+  animation-name: uegmwqf;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uh888ej {
+@keyframes uegmwqf {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -4428,37 +4428,6 @@ html .mod-toolbox-rd .menuarea.modtools {
 }
 .unvotable-message:first-letter {
   text-transform: capitalize;
-}
-
-.pinnable-content.pinned .link {
-  display: flex;
-}
-.pinnable-content.pinned .link .midcol {
-  align-self: center;
-}
-.pinnable-content.pinned .link .entry {
-  display: flex;
-  max-width: initial;
-}
-.pinnable-content.pinned .midcol,
-.pinnable-content.pinned .top-matter,
-.pinnable-content.pinned .reddit-video-player-root {
-  position: initial;
-}
-.pinnable-content.pinned .top-matter {
-  order: 1;
-  width: initial;
-  align-self: center;
-}
-.pinnable-content.pinned .expando {
-  margin: 0 20px 0 0;
-}
-.pinnable-content.pinned .invisible-when-pinned {
-  display: none;
-}
-
-#newlink-with-image-upload #new-link-video-preview {
-  box-shadow: none !important;
 }
 
 .commentarea form.usertext.cloneable.warn-on-unload {
