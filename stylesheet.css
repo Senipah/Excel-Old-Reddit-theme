@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uegmwq6;
+  animation-name: u27ujvf;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uegmwq6 {
+@keyframes u27ujvf {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1590,12 +1590,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uegmwqf;
+  animation-name: u27ujvt;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uegmwqf {
+@keyframes u27ujvt {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6443,7 +6443,7 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   height: 93px;
   color: #292f34 ;
   background-color: #f3f3f3 ;
-  background-image: url(%%light-header-img-small-50alpha%%);
+  background-image: url(%%light-header-img-small-62.5alpha%%);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: auto 75px;
