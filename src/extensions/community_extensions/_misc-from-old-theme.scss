@@ -107,6 +107,8 @@ body:not(.subscriber) .down {
 
 // remove header row that sorts the milestone table in sidebar
 .side .md table {
+  width: 100%;
+  max-width: 100%;
   thead {
     display: none;
   }
