@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uu9arpb;
+  animation-name: ubcpsxf;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uu9arpb {
+@keyframes ubcpsxf {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1593,12 +1593,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uu9arq4;
+  animation-name: ubcpsxq;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uu9arq4 {
+@keyframes ubcpsxq {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3429,14 +3429,6 @@ html .res #REScommentNavToggle {
 html .res #REScommentNavToggle:hover {
   max-width: 100%;
 }
-html .res .content .RESBigEditorPop {
-  color: #98abba ;
-}
-@media (prefers-color-scheme: dark) {
-  html .res .content .RESBigEditorPop {
-    color: #828282 ;
-  }
-}
 html .res .commentarea .thing {
   border: none !important;
   border-radius: 4px !important;
@@ -4438,15 +4430,8 @@ html .mod-toolbox-rd .menuarea.modtools {
   text-transform: capitalize;
 }
 
-.commentarea form.usertext.cloneable.warn-on-unload {
-  margin: 0 0 16px;
-  padding: 16px 0;
-}
-
-.content .commentarea > .sitetable > .comment,
-.child .thing {
-  margin: 0 0 8px 10px;
-  padding: 5px 8px 5px 5px;
+.entry {
+  border-left: 3px solid transparent;
 }
 
 .panestack-title {
@@ -4454,12 +4439,6 @@ html .mod-toolbox-rd .menuarea.modtools {
   border-bottom: 0;
   padding-left: 16px;
   margin-top: 16px;
-}
-
-.commentarea > .usertext {
-  overflow: visible;
-  -ms-flex-order: -1;
-  order: -1;
 }
 
 .usertext button {
