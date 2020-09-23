@@ -53,10 +53,9 @@
   .userattrs > a,
   .flair {
     // min-width: 16px;
-    height: auto;
+    display: inline;
     border-radius: v.$radius;
-    margin: 0 5px;
-    padding: 2px 5px;
+    padding: 2px;
     font-size: 10px;
     @include v.theme("color", v.$lightText);
     border: none;

@@ -131,10 +131,16 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
 
 // Bot User Flair
 
-.flair-paperclip:after {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  content: "";
-  background: v.getImage("paperclip") 0 0 no-repeat;
+.flair-paperclip {
+  background-color: transparent;
+  &:after {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background: v.getImage("paperclip") center no-repeat;
+    @include v.theme("background-color", v.$primary);
+  }
 }
