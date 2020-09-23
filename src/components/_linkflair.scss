@@ -6,6 +6,10 @@
   padding: 2px 8px;
   height: 18px;
   border-radius: 20px;
+  min-width: 100px;
+  width: auto;
+  max-width: 100%;
+  text-align: center;
   border: 0 solid;
   @include v.theme("color", v.$lightText);
   font-size: 12px;
