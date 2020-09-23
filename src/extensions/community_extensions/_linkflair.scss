@@ -38,6 +38,7 @@
 
 .linkflair-paidservice .linkflairlabel {
   background-color: v.getColor("linkflair", "paidservice");
+  @include v.theme("color", v.$darkText);
 }
 
 .linkflair-notsolvedcase .linkflairlabel {
