@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: ubcpsxf;
+  animation-name: uxkcpz7;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes ubcpsxf {
+@keyframes uxkcpz7 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1593,12 +1593,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: ubcpsxq;
+  animation-name: uxkcq03;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes ubcpsxq {
+@keyframes uxkcq03 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -2639,6 +2639,7 @@ body > .content .link.compressed .midcol {
 .expando-button:after {
   position: relative !important;
   display: flex;
+  border-radius: 4px;
   width: 80%;
   margin-left: 10%;
   height: 2px;
@@ -6292,78 +6293,7 @@ body:not(.subscriber) .down {
   background-color: #217346 ;
 }
 
-.commentarea .entry {
-  margin-left: 69.5px;
-}
-.commentarea .flair-points {
-  background-color: transparent;
-  border: none;
-  background-image: url(%%clippyflair%%);
-  background-position: center;
-  position: absolute;
-  margin-right: 0;
-  padding: 0;
-  text-align: center;
-  width: 36px;
-  height: 50px;
-  left: 33.5px;
-  border-radius: 4px;
-  color: #ff4500;
-  text-shadow: 1px 1px 1px #292f34 ;
-  font-size: 150%;
-  font-weight: bold;
-  line-height: 50px;
-}
-.commentarea .flair-points::after {
-  content: "ClippyPoints Awarded:  " attr(title);
-  position: absolute;
-  top: 0;
-  left: 36px;
-  font-size: 90%;
-  line-height: 15px;
-  margin-top: -2px;
-  padding: 6px 6px;
-  background-color: #217346 ;
-  color: #ffffff ;
-  text-shadow: 0px 1px 0px #333333;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  white-space: nowrap;
-  transform: scaleX(0);
-  transition: transform 0.5s ease;
-  transform-origin: left center;
-}
-@media (prefers-color-scheme: dark) {
-  .commentarea .flair-points::after {
-    background-color: #217346 ;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .commentarea .flair-points::after {
-    color: #d7dadc ;
-  }
-}
-.commentarea .flair-points:hover::after {
-  transform: scaleX(1);
-  z-index: 2;
-}
-.commentarea .flair-points::before {
-  display: none;
-}
-.commentarea form.usertext.cloneable.warn-on-unload {
-  margin-left: 45.5px;
-}
-
-.commentarea .thing,
-.res .commentarea .thing,
-html.res-commentBoxes.res-commentBoxes-rounded .comment {
-  position: relative;
-}
-
-.titlebox .flair-points,
-.link .entry .tagline .flair-points,
-.sidecontentbox .flair-points,
-.linkflair .flair-points {
+.flair.flair-points {
   display: inline-flex;
   font-weight: bold;
   background-color: #d7dadc ;
@@ -6372,20 +6302,16 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   background: #217346 ;
   color: #d7dadc ;
   border-style: none;
+  margin-left: 3px;
 }
 @media (prefers-color-scheme: dark) {
-  .titlebox .flair-points,
-.link .entry .tagline .flair-points,
-.sidecontentbox .flair-points,
-.linkflair .flair-points {
+  .flair.flair-points {
     border-color: #d7dadc ;
   }
 }
-.titlebox .flair-points::before,
-.link .entry .tagline .flair-points::before,
-.sidecontentbox .flair-points::before,
-.linkflair .flair-points::before {
+.flair.flair-points::before {
   content: "ClippyPoints Awarded:  ";
+  display: inline-flex;
   background-color: #217346 ;
   white-space: nowrap;
   overflow: hidden;
@@ -6399,31 +6325,19 @@ html.res-commentBoxes.res-commentBoxes-rounded .comment {
   transition-timing-function: ease;
 }
 @media (prefers-color-scheme: dark) {
-  .titlebox .flair-points::before,
-.link .entry .tagline .flair-points::before,
-.sidecontentbox .flair-points::before,
-.linkflair .flair-points::before {
+  .flair.flair-points::before {
     background-color: #217346 ;
   }
 }
-.titlebox .flair-points:hover,
-.link .entry .tagline .flair-points:hover,
-.sidecontentbox .flair-points:hover,
-.linkflair .flair-points:hover {
+.flair.flair-points:hover {
   color: #ffffff ;
 }
 @media (prefers-color-scheme: dark) {
-  .titlebox .flair-points:hover,
-.link .entry .tagline .flair-points:hover,
-.sidecontentbox .flair-points:hover,
-.linkflair .flair-points:hover {
+  .flair.flair-points:hover {
     color: #d7dadc ;
   }
 }
-.titlebox .flair-points:hover::before,
-.link .entry .tagline .flair-points:hover::before,
-.sidecontentbox .flair-points:hover::before,
-.linkflair .flair-points:hover::before {
+.flair.flair-points:hover::before {
   width: 115px !important;
   transform: scaleX(1);
 }
