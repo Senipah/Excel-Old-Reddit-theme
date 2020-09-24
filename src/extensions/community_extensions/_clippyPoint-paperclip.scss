@@ -1,5 +1,8 @@
 @use '../../abstracts/mixins' as v;
 
+$_css-class: "points";
+$_desc: "ClippyPoints Awarded:  ";
+
 //Clippy Point Flair styling - Comments
 
 $_clippy-height: 50px;
