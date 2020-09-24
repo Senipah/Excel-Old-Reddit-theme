@@ -1,0 +1,77 @@
+@use '../../abstracts/mixins' as v;
+
+//Clippy Point Flair styling - Comments
+
+$_clippy-height: 50px;
+$_clippy-width: 36px;
+$_arrow-width: 15px;
+$_left-pad: 10px;
+$_arrow-margin-left: 8.5px;
+$_margin: $_arrow-width + $_clippy-width + $_left-pad + $_arrow-margin-left;
+
+.commentarea {
+  .entry {
+    margin-left: $_margin;
+  }
+
+  .flair- {
+    &#{$_css-class} {
+      background-color: transparent;
+      border: none;
+      background-image: v.getImage("clippyflair");
+      background-position: center;
+      position: absolute;
+      margin-right: 0;
+      padding: 0;
+      text-align: center;
+      width: $_clippy-width;
+      height: $_clippy-height;
+      left: ($_arrow-width + $_left-pad + $_arrow-margin-left);
+      border-radius: v.$radius;
+      color: v.getColor("vote", "upvote");
+      @include v.theme("text-shadow", v.$darkText, false, true, "1px 1px 1px");
+      font-size: 150%;
+      font-weight: bold;
+      line-height: $_clippy-height;
+      &::after {
+        content: $_desc attr(title);
+        position: absolute;
+        top: 0;
+        left: $_clippy-width;
+        font-size: 90%;
+        line-height: 15px;
+        margin-top: -2px;
+        padding: 6px 6px;
+        @include v.theme("background-color", v.$banner-backgroundColor);
+        @include v.theme("color", v.$menuActiveText);
+        // @include v.theme-stroke(v.$darkText);
+        text-shadow: 0px 1px 0px #333333;
+        border-radius: v.$radius;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        white-space: nowrap;
+        transform: scaleX(0);
+        transition: transform v.$transition ease;
+        transform-origin: left center;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        z-index: 2;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  form.usertext.cloneable.warn-on-unload {
+    margin-left: $_margin - 24px;
+  }
+}
+
+.commentarea .thing,
+.res .commentarea .thing,
+html.res-commentBoxes.res-commentBoxes-rounded .comment {
+  position: relative;
+}
+
+//End Clippy Point Flair styling - Comments
