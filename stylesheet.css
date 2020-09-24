@@ -272,12 +272,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uxkcpz7;
+  animation-name: u8cdtqt;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uxkcpz7 {
+@keyframes u8cdtqt {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1593,12 +1593,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uxkcq03;
+  animation-name: u8cdtrb;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uxkcq03 {
+@keyframes u8cdtrb {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -2638,8 +2638,8 @@ body > .content .link.compressed .midcol {
 .expando-button:before,
 .expando-button:after {
   position: relative !important;
-  display: flex;
   border-radius: 4px;
+  display: flex;
   width: 80%;
   margin-left: 10%;
   height: 2px;
