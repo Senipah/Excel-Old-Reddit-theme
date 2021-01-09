@@ -1,12 +1,13 @@
 @use '../../abstracts/mixins' as v;
 
-$_ribbon-height: 64px;
+// $_ribbon-height: 64px;
+$_ribbon-height: v.$header-inner-height;
 $_snoo-margin-top: $_ribbon-height - 40px - 5px;
 $_book-name-margin-top: 5px;
 
 $_img-pad: 5px;
 $_srList-height: 18px;
-$_custom-inner-height: (v.$header-height - $_ribbon-height - $_srList-height);
+$_custom-inner-height: $_ribbon-height; // (v.$header-height - $_ribbon-height - $_srList-height);
 $_hdr-img-height: $_custom-inner-height - ($_img-pad * 2);
 $_hdr-img-width: $_hdr-img-height;
 $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
@@ -42,76 +43,78 @@ $_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
   // }
   #header-bottom-left {
     height: $_ribbon-height;
-    @include v.theme("background-color", v.$ribbon-color);
+    // @include v.theme("background-color", v.$primary);
+    background: v.getImage("headerimg");
+    background-size: cover;
     overflow: visible;
     .pagename.redditname {
       position: absolute;
       left: 50%;
-      top: $_ribbon-height;
+      // top: $_ribbon-height;
       height: $_custom-inner-height;
       width: $_custom-inner-height;
       transform: translateX(-50px);
       visibility: hidden;
-    //   a {
-    //     visibility: visible;
-    //     margin-top: $_img-margin-top;
-    //     height: $_hdr-img-height;
-    //     width: $_hdr-img-width;
-    //     position: relative;
-    //     left: calc(50% - #{$_hdr-img-width / 2});
-    //     text-indent: -9999px;
-    //     &::before {
-    //       content: "";
-    //       position: absolute;
-    //       height: $_hdr-img-height;
-    //       width: $_hdr-img-width;
-    //       left: 0;
-    //       z-index: -1;
-    //       background-image: v.getImage("excel-logo");
-    //       background-size: contain;
-    //       background-repeat: no-repeat;
-    //       background-position: center;
-    //     }
-    //     &:hover {
-    //       &::before {
-    //         content: "";
-    //         transform: scale(-1) rotate(540deg);
-    //         transition: transform 0.5s ease-in-out;
-    //       }
-    //     }
-    //   }
-    // }
-    // #header-img {
-    //   margin-top: $_snoo-margin-top;
-    // }
-    .tabmenu {
-      background-color: inherit;
-      margin-left: 91px;
-      padding: 0;
-      top: $_ribbon-height - v.$tabmenu-height;
-      li {
-        display: inline-block;
-        width: auto;
-        a {
-          margin: 0;
-          margin-top: 1px;
-          padding: 0 v.$padding;
-          line-height: v.$tabmenu-height;
-          text-transform: capitalize;
-          color: #fff;
-          font-weight: normal;
-          font-size: 14px;
+      a {
+        visibility: visible;
+        margin-top: $_img-margin-top;
+        height: $_hdr-img-height;
+        width: $_hdr-img-width;
+        position: relative;
+        left: calc(50% - #{$_hdr-img-width / 2});
+        text-indent: -9999px;
+        &::before {
+          content: "";
+          position: absolute;
+          height: $_hdr-img-height;
+          width: $_hdr-img-width;
+          left: 0;
+          z-index: -1;
+          background-image: v.getImage("excel-logo");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
         }
-        // &.selected a {
-        //   @include v.theme("background-color", v.$alt-navBar-backgroundColor);
-        //   @include v.theme(
-        //     "border-bottom",
-        //     v.$navBar-backgroundColor,
-        //     false,
-        //     true "2px solid"
-        //   );
-        //   @include v.theme("color", v.$alt-navBar-selected);
-        // }
+        &:hover {
+          &::before {
+            content: "";
+            transform: scale(-1) rotate(540deg);
+            transition: transform 0.5s ease-in-out;
+          }
+        }
+      }
+      #header-img {
+        margin-top: $_snoo-margin-top;
+      }
+      .tabmenu {
+        background-color: inherit;
+        margin-left: 91px;
+        padding: 0;
+        top: $_ribbon-height - v.$tabmenu-height;
+        li {
+          display: inline-block;
+          width: auto;
+          a {
+            margin: 0;
+            margin-top: 1px;
+            padding: 0 v.$padding;
+            line-height: v.$tabmenu-height;
+            text-transform: capitalize;
+            color: #fff;
+            font-weight: normal;
+            font-size: 14px;
+          }
+          // &.selected a {
+          //   @include v.theme("background-color", v.$alt-navBar-backgroundColor);
+          //   @include v.theme(
+          //     "border-bottom",
+          //     v.$navBar-backgroundColor,
+          //     false,
+          //     true "2px solid"
+          //   );
+          //   @include v.theme("color", v.$alt-navBar-selected);
+          // }
+        }
       }
     }
   }
