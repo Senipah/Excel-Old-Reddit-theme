@@ -1,0 +1,118 @@
+@use '../../abstracts/mixins' as v;
+
+$_ribbon-height: 64px;
+$_snoo-margin-top: $_ribbon-height - 40px - 5px;
+$_book-name-margin-top: 5px;
+
+$_img-pad: 5px;
+$_srList-height: 18px;
+$_custom-inner-height: (v.$header-height - $_ribbon-height - $_srList-height);
+$_hdr-img-height: $_custom-inner-height - ($_img-pad * 2);
+$_hdr-img-width: $_hdr-img-height;
+$_img-margin-top: ($_custom-inner-height - $_hdr-img-height) / 2;
+
+#header {
+  // .userkarma {
+  //   @include v.theme("color", v.$lightText);
+  // }
+  // height: v.$header-height;
+  // @include v.theme("background-color", v.$navBar-backgroundColor);
+  // #sr-header-area {
+  //   position: absolute;
+  //   top: $_ribbon-height;
+  //   width: 100%;
+  //   height: v.$header-height - $_ribbon-height;
+  //   @include v.theme("color", v.$darkText);
+  //   @include v.theme("background-color", v.$alt-navBar-backgroundColor);
+  //   background-position: left top;
+  //   background-repeat: no-repeat;
+  //   background-size: auto 75px;
+  //   #RESShortcutsEditContainer,
+  //   #RESShortcutsViewport,
+  //   #srLeftContainer,
+  //   .width-clip {
+  //     margin-top: (v.$header-height - $_ribbon-height) - 20px;
+  //     .redesign-beta-optin {
+  //       margin: 0;
+  //     }
+  //   }
+  //   #srLeftContainer {
+  //     margin-left: v.$container-margin-hor;
+  //   }
+  // }
+  #header-bottom-left {
+    height: $_ribbon-height;
+    @include v.theme("background-color", v.$ribbon-color);
+    overflow: visible;
+    .pagename.redditname {
+      position: absolute;
+      left: 50%;
+      top: $_ribbon-height;
+      height: $_custom-inner-height;
+      width: $_custom-inner-height;
+      transform: translateX(-50px);
+      visibility: hidden;
+    //   a {
+    //     visibility: visible;
+    //     margin-top: $_img-margin-top;
+    //     height: $_hdr-img-height;
+    //     width: $_hdr-img-width;
+    //     position: relative;
+    //     left: calc(50% - #{$_hdr-img-width / 2});
+    //     text-indent: -9999px;
+    //     &::before {
+    //       content: "";
+    //       position: absolute;
+    //       height: $_hdr-img-height;
+    //       width: $_hdr-img-width;
+    //       left: 0;
+    //       z-index: -1;
+    //       background-image: v.getImage("excel-logo");
+    //       background-size: contain;
+    //       background-repeat: no-repeat;
+    //       background-position: center;
+    //     }
+    //     &:hover {
+    //       &::before {
+    //         content: "";
+    //         transform: scale(-1) rotate(540deg);
+    //         transition: transform 0.5s ease-in-out;
+    //       }
+    //     }
+    //   }
+    // }
+    // #header-img {
+    //   margin-top: $_snoo-margin-top;
+    // }
+    .tabmenu {
+      background-color: inherit;
+      margin-left: 91px;
+      padding: 0;
+      top: $_ribbon-height - v.$tabmenu-height;
+      li {
+        display: inline-block;
+        width: auto;
+        a {
+          margin: 0;
+          margin-top: 1px;
+          padding: 0 v.$padding;
+          line-height: v.$tabmenu-height;
+          text-transform: capitalize;
+          color: #fff;
+          font-weight: normal;
+          font-size: 14px;
+        }
+        // &.selected a {
+        //   @include v.theme("background-color", v.$alt-navBar-backgroundColor);
+        //   @include v.theme(
+        //     "border-bottom",
+        //     v.$navBar-backgroundColor,
+        //     false,
+        //     true "2px solid"
+        //   );
+        //   @include v.theme("color", v.$alt-navBar-selected);
+        // }
+      }
+    }
+  }
+}
