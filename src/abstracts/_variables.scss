@@ -57,6 +57,8 @@ $_images: (
   "comment-area-bg2": "comment-area-bg2",
   "light-header-img-small": "light-header-img-small-75alpha",
   "dark-header-img-small": "dark-header-img-small-50alpha",
+  "dark-code-bg": "dark-code-bg",
+  "light-code-bg": "light-code-bg",
 );
 
 @function getImage($name) {
@@ -137,13 +139,6 @@ $_colors: (
     "mod": $_moderator,
     "removed": #202020,
   ),
-  "code": (
-    "background": #1e1e1e,
-    "color": #d4d4d4,
-    "border": #007acc,
-    "line-nums": #858585,
-    "separator": #404040,
-  ),
 );
 
 @function getColor($keys...) {
@@ -164,6 +159,11 @@ $button: "button";
 $buttonTinted50: "buttonTinted50";
 $buttonShaded80: "buttonShaded80";
 $canvas: "canvas";
+$codeBackground: "codeBackground";
+$codeColor: "codeColor";
+$codeBorder: "codeBorder";
+$codeLineNums: "codeLineNums";
+$codeSeparator: "codeSeparator";
 $darkText: "darkText"; // not present in theme maps - used by mixin
 $field: "field";
 $highlight: "highlight";
