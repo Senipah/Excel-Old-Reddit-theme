@@ -269,12 +269,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uzahxes;
+  animation-name: u7oss68;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uzahxes {
+@keyframes u7oss68 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1589,12 +1589,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uzahxf2;
+  animation-name: u7oss6h;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uzahxf2 {
+@keyframes u7oss6h {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -4276,11 +4276,11 @@ table thead {
   color: #4472c4;
 }
 table thead tr th {
-  color: #fff !important;
+  color: #fff;
   border: 1px solid #4472c4 !important;
 }
 table thead tr th label {
-  color: #fff !important;
+  color: #fff;
 }
 table tbody tr {
   background-color: #fff;
@@ -4293,13 +4293,9 @@ table tbody tr th {
   color: #000;
   border: 1px solid #8ea9db !important;
 }
-table tbody tr td *,
-table tbody tr th * {
-  color: #000 !important;
-}
 table tbody tr td a,
 table tbody tr th a {
-  color: #0563c1 !important;
+  color: #0563c1;
 }
 table tbody tr td span,
 table tbody tr td label,
