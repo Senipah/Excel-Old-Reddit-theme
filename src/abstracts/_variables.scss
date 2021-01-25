@@ -20,7 +20,8 @@ $header-height: 136px; // normal header size
 // $header-height: 157px; // for custom header
 $header-bottom-left-height: 96px;
 $header-bottom-left: $header-height - $header-bottom-left-height;
-$tabmenu-height: 35px;
+// $tabmenu-height: 35px;
+$tabmenu-height: 40px;
 $header-inner-height: $header-height - $subreddits-bar-height - $tabmenu-height;
 
 $sidebar-width: 320px;
@@ -60,6 +61,10 @@ $_images: (
   "dark-header-img-small": "dark-header-img-small-50alpha",
   "dark-code-bg": "dark-code-bg",
   "light-code-bg": "light-code-bg",
+  "tabmenu-inactive-light": "tabmenu-inactive-light",
+  "tabmenu-inactive-dark": "tabmenu-inactive-dark",
+  "tabmenu-active-light": "tabmenu-active-light",
+  "tabmenu-active-dark": "tabmenu-active-dark",
 );
 
 @function getImage($name) {
