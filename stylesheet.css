@@ -269,12 +269,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: up8c79m;
+  animation-name: un05ovd;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes up8c79m {
+@keyframes un05ovd {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1012,10 +1012,6 @@ html .res-navTop #header-bottom-right,
     border-color: #343536 ;
   }
 }
-.titlebox .res-fancy-toggle-button {
-  display: inline-block;
-  vertical-align: middle;
-}
 .titlebox .res-fancy-toggle-button.RESDashboardToggle, .titlebox .res-fancy-toggle-button.RESshortcutside {
   background: #217346 ;
   color: #ffffff ;
@@ -1102,6 +1098,7 @@ html .res-navTop #header-bottom-right,
   height: 36px;
   line-height: 36px;
   padding: 0 16px;
+  margin: 16px 5px 0 0;
   max-width: 33%;
   padding: 0;
   padding: 0 8px;
@@ -1158,8 +1155,6 @@ html .res-navTop #header-bottom-right,
   }
 }
 .titlebox .fancy-toggle-button {
-  display: inline-block;
-  vertical-align: middle;
   margin: 0;
 }
 .titlebox .fancy-toggle-button .active {
@@ -1674,12 +1669,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: up8c79s;
+  animation-name: un05ovw;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes up8c79s {
+@keyframes un05ovw {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6080,7 +6075,7 @@ ul.image-preview-list li .description pre {
   font-size: 1.1rem;
   display: inline-block;
   max-height: 35px;
-  animation-name: up8c7a1;
+  animation-name: un05owe;
   animation-delay: 0s;
   animation-duration: 0.5s;
   animation-timing-function: ease;
@@ -6098,7 +6093,7 @@ ul.image-preview-list li .description pre {
     color: #d7dadc ;
   }
 }
-@keyframes up8c7a1 {
+@keyframes un05owe {
   0% {
     width: 0;
   }
