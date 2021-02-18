@@ -269,12 +269,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: un05ovd;
+  animation-name: uj8adq6;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes un05ovd {
+@keyframes uj8adq6 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -733,9 +733,6 @@ html .res-navTop #header-bottom-right,
   background: none;
 }
 
-.gadget .midcol {
-  width: 38px;
-}
 .gadget .reddit-entry .linkflairlabel {
   display: none;
 }
@@ -1669,12 +1666,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: un05ovw;
+  animation-name: uj8adqs;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes un05ovw {
+@keyframes uj8adqs {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -2034,8 +2031,7 @@ body input[type=submit]:active {
 .post-sharing,
 .flairselector,
 .comments-page .link,
-.commentarea > .sitetable > .comment,
-#bottom-comments:not(.child) > .sitetable > .comment,
+.comment,
 #images,
 .sponsorshipbox,
 .stylesheet-customize-container .pretty-form,
@@ -2068,8 +2064,7 @@ body input[type=submit]:active {
 .post-sharing,
 .flairselector,
 .comments-page .link,
-.commentarea > .sitetable > .comment,
-#bottom-comments:not(.child) > .sitetable > .comment,
+.comment,
 #images,
 .sponsorshipbox,
 .stylesheet-customize-container .pretty-form,
@@ -2097,8 +2092,7 @@ body input[type=submit]:active {
 .post-sharing,
 .flairselector,
 .comments-page .link,
-.commentarea > .sitetable > .comment,
-#bottom-comments:not(.child) > .sitetable > .comment,
+.comment,
 #images,
 .sponsorshipbox,
 .stylesheet-customize-container .pretty-form,
@@ -2126,8 +2120,7 @@ body input[type=submit]:active {
 .post-sharing,
 .flairselector,
 .comments-page .link,
-.commentarea > .sitetable > .comment,
-#bottom-comments:not(.child) > .sitetable > .comment,
+.comment,
 #images,
 .sponsorshipbox,
 .stylesheet-customize-container .pretty-form,
@@ -2581,9 +2574,20 @@ body input[type=submit]:active {
   padding: 0;
 }
 
+.comment {
+  padding-left: 8px;
+  margin-top: 5px;
+}
+.comment .midcol {
+  margin-left: 10px;
+}
+.comment .child {
+  margin-left: 22px;
+}
 .comment.spam > .child {
   padding-left: 0;
-  margin-left: 16px;
+  margin-left: 22px;
+  background-color: inherit;
 }
 .comment .flat-list li a {
   color: #98abba ;
@@ -2662,6 +2666,28 @@ html .nestedlisting .comment .comment .comment .comment .comment .comment .comme
 html .nestedlisting .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
     background-color: #2c2c2d !important;
   }
+}
+
+/*COMMENT EXPANDOS*/
+.commentarea .comment a.expand {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 5px 0;
+  height: 100%;
+  box-sizing: border-box;
+  transition: 200ms;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.commentarea .comment a.expand:hover {
+  background-color: #217346 ;
+}
+
+.commentarea .thing,
+.midcol {
+  position: relative;
 }
 
 .link.compressed {
@@ -4610,17 +4636,14 @@ html #tb-footer-block {
   width: 16px;
 }
 
+.child .comment {
+  margin-top: 5px;
+}
+
 .comment .child,
 .comment .showreplies {
-  border-left: 1px solid #edf1f3 ;
-  margin-top: 0;
-  margin-left: 20px;
-}
-@media (prefers-color-scheme: dark) {
-  .comment .child,
-.comment .showreplies {
-    border-left: 1px solid #272727 ;
-  }
+  margin-top: 5px;
+  border-left: none;
 }
 .comment .entry .tagline {
   color: #98abba ;
@@ -4698,12 +4721,6 @@ html #tb-footer-block {
 .listing-page .comment {
   margin-left: 0;
   padding: 16px 16px 16px 8px;
-}
-.listing-page .comment .midcol {
-  width: 36px;
-  margin-right: 2px;
-  margin-top: 4px;
-  overflow: visible;
 }
 .listing-page .comment .parent {
   margin-bottom: 4px;
@@ -6075,7 +6092,7 @@ ul.image-preview-list li .description pre {
   font-size: 1.1rem;
   display: inline-block;
   max-height: 35px;
-  animation-name: un05owe;
+  animation-name: uj8adr1;
   animation-delay: 0s;
   animation-duration: 0.5s;
   animation-timing-function: ease;
@@ -6093,7 +6110,7 @@ ul.image-preview-list li .description pre {
     color: #d7dadc ;
   }
 }
-@keyframes un05owe {
+@keyframes uj8adr1 {
   0% {
     width: 0;
   }
