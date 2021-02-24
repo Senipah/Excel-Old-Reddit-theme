@@ -16,3 +16,21 @@
     @include v.theme("background-color", v.$primary);
   }
 }
+
+.flair-msemployee {
+  padding: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  height: 16px;
+  &:before {
+    display: inline-flex;
+    position: relative;
+    border-radius: v.$radius;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    content: "";
+    background: v.getImage("msemployee") center no-repeat;
+    background-size: contain;
+  }
+}
