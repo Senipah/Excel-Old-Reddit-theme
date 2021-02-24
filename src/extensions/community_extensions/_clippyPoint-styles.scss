@@ -4,34 +4,29 @@ $_css-class: "points";
 $_desc: "ClippyPoints Awarded:  ";
 
 // Clippy Point Flair styling - Link Flair
-.titlebox,
-.link .entry .tagline,
-.sidecontentbox,
-.linkflair {
-  .flair- {
-    &#{$_css-class} {
-      display: inline-flex;
+.flair- {
+  &#{$_css-class} {
+    display: inline-flex;
+    &::before {
+      content: $_desc;
+      // display: inline;
+      @include v.theme("background-color", v.$banner-backgroundColor);
+      white-space: nowrap;
+      overflow: hidden;
+      border: 0px solid;
+      position: relative;
+      width: 0 !important;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition-property: transform, width;
+      transition-duration: v.$transition;
+      transition-timing-function: ease;
+    }
+    &:hover {
+      @include v.theme("color", v.$menuActiveText);
       &::before {
-        content: $_desc;
-        // display: inline;
-        @include v.theme("background-color", v.$banner-backgroundColor);
-        white-space: nowrap;
-        overflow: hidden;
-        border: 0px solid;
-        position: relative;
-        width: 0 !important;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition-property: transform, width;
-        transition-duration: v.$transition;
-        transition-timing-function: ease;
-      }
-      &:hover {
-        @include v.theme("color", v.$menuActiveText);
-        &::before {
-          width: 115px !important;
-          transform: scaleX(1);
-        }
+        width: 115px !important;
+        transform: scaleX(1);
       }
     }
   }
