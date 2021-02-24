@@ -3,17 +3,20 @@
 // Bot User Flair
 
 .flair-paperclip {
-  border: none;
+  padding: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  height: 16px;
   &:after {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     border-radius: v.$radius;
-    top: 5px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
     content: "";
     background: v.getImage("paperclip") center no-repeat;
-    @include v.theme("background-color", v.$primary);
+    background-size: contain;
   }
 }
 
