@@ -5,16 +5,25 @@ $_desc: "ClippyPoints Awarded:  ";
 
 //Clippy Point Flair styling - Comments
 
+$_collapse-width: 22px;
 $_clippy-height: 50px;
-$_clippy-width: 36px;
+// $_clippy-width: 26px;
+$_clippy-width: 35px;
 $_arrow-width: 15px;
-$_left-pad: 10px;
 $_arrow-margin-left: 8.5px;
-$_margin: $_arrow-width + $_clippy-width + $_left-pad + $_arrow-margin-left;
+$_arrow-margin-right: 3px;
+$_clippy-start: $_collapse-width + $_arrow-width + $_arrow-margin-right;
+$_comment-start: $_clippy-start - $_arrow-margin-left + $_clippy-width +
+  $_arrow-margin-right + $_arrow-margin-right;
+
+.arrow {
+  margin-left: $_arrow-margin-left;
+  margin-right: $_arrow-margin-right;
+}
 
 .commentarea {
   .entry {
-    margin-left: $_margin;
+    margin-left: $_comment-start;
   }
 
   .flair- {
@@ -23,19 +32,20 @@ $_margin: $_arrow-width + $_clippy-width + $_left-pad + $_arrow-margin-left;
       border: none;
       background-image: v.getImage("clippyflair");
       background-position: center;
+      background-repeat: no-repeat;
       position: absolute;
-      margin-right: 0;
       padding: 0;
-      text-align: center;
       width: $_clippy-width;
       height: $_clippy-height;
-      left: ($_arrow-width + $_left-pad + $_arrow-margin-left);
+      left: $_clippy-start;
       border-radius: v.$radius;
-      color: v.getColor("vote", "upvote");
-      @include v.theme("text-shadow", v.$darkText, false, true, "1px 1px 1px");
+      @include v.theme("color", v.$primary);
+      text-shadow: 0px 1px 0px #333333;
       font-size: 150%;
       font-weight: bold;
+      text-align: center;
       line-height: $_clippy-height;
+      margin: 0;
       &::after {
         content: $_desc attr(title);
         position: absolute;
@@ -67,7 +77,7 @@ $_margin: $_arrow-width + $_clippy-width + $_left-pad + $_arrow-margin-left;
   }
 
   form.usertext.cloneable.warn-on-unload {
-    margin-left: $_margin - 24px;
+    margin-left: $_comment-start - 24px;
   }
 }
 
