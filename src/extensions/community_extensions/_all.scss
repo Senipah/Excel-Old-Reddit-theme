@@ -2,6 +2,7 @@
 @use 'misc-from-old-theme';
 
 // rest
+// @use 'clippyPoint-paperclip';
 @use 'clippyPoint-styles';
 // @use 'excel-header';
 // @use 'alt-excel-header.scss';
@@ -14,3 +15,4 @@
 @use 'sidebar-filterbyflair';
 @use 'submission-page';
 @use 'submit-post-hoverbox';
+@use 'user-flairs';
