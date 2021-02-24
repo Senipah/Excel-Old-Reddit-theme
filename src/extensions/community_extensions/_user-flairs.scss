@@ -1,0 +1,18 @@
+@use '../../abstracts/mixins' as v;
+
+// Bot User Flair
+
+.flair-paperclip {
+  border: none;
+  &:after {
+    display: inline-block;
+    position: relative;
+    border-radius: v.$radius;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background: v.getImage("paperclip") center no-repeat;
+    @include v.theme("background-color", v.$primary);
+  }
+}
