@@ -16,6 +16,7 @@
   transform: scaleY(0);
   transition: transform v.$transition ease;
   transform-origin: top;
+  border-radius: v.$radius;
 }
 
 .side .submit-text .morelink:hover:after {
