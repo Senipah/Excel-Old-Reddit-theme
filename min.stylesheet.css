@@ -1,10 +1,3 @@
-#header .tabmenu,
-.footer.rounded .col ul.flat-vert.hover:hover li,
-.footer.rounded .col:hover ul.flat-vert.hover li {
-  height: 40px;
-  line-height: 40px;
-}
-
 #header .pagename a,
 .account-activity-box a,
 .gadget .right,
@@ -135,7 +128,10 @@ html .res .srSep {
   margin-top: 60px;
   height: 180px;
   border-top: 50px solid #fff;
-  background: url(%%footer%%) 50% 0 / cover no-repeat;
+  background-color: #217346;
+  background-image: url(%%footer%%);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 65px 200px 40px;
 }
 
@@ -169,6 +165,18 @@ html .res .srSep {
   height: 60px;
   line-height: 50px;
   font-size: 14px;
+}
+
+#link-desc,
+#noresults,
+#text-desc,
+.deleted > .entry .author,
+.flat-list.buttons .flairselectbtn,
+.link .entry .tagline .userattrs,
+.res .thing .tagline .userattrs,
+.thing .tagline .userattrs,
+.titlebox .tagline {
+  font-size: 0;
 }
 
 .footer.rounded .col:nth-of-type(1):before {
@@ -253,6 +261,12 @@ html .RESDialogSmall {
   max-height: 280px;
 }
 
+.footer.rounded .col ul.flat-vert.hover:hover li,
+.footer.rounded .col:hover ul.flat-vert.hover li {
+  height: 40px;
+  line-height: 40px;
+}
+
 #hsts_pixel,
 .debuginfo {
   background-color: transparent;
@@ -278,13 +292,13 @@ html .RESDialogSmall {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s, box-shadow 0.25s;
-  animation-name: uj3vbe8;
+  animation-name: uu1s8ju;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
 
-@keyframes uj3vbe8 {
+@keyframes uu1s8ju {
   0%,
   100%,
   20% {
@@ -325,6 +339,41 @@ html .RESDialogSmall {
   z-index: 0;
 }
 
+#header-img.default-header {
+  margin-top: 11px;
+  margin-left: 24px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-image: url(%%roundel-wink-sprite%%);
+  background-position: 0 0;
+  vertical-align: top;
+  font-size: 0;
+  text-indent: unset;
+}
+
+#header-img.default-header::after {
+  position: relative;
+  width: 84px;
+  height: 27px;
+  left: 50px;
+  top: 11px;
+  content: "";
+  background-image: url(%%reddit-text-with-shadow%%);
+  display: inline-block;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: left;
+}
+
+#header-img.default-header:hover {
+  background-position: -50px 0;
+}
+
+#header-img.default-header:hover::after {
+  transform: scaleX(1);
+}
+
 #sr-header-area {
   background: #fff;
   border: none;
@@ -360,7 +409,6 @@ html .RESDialogSmall {
 }
 
 #autocomplete_dropdown,
-#header,
 #search,
 #sr-header-area .drop-choices,
 html .commentarea .res-expando-box div.usertext-body .md,
@@ -436,6 +484,8 @@ a.random.choice {
   display: block;
   position: absolute;
   top: 72px;
+  height: 40px;
+  line-height: 40px;
   border: none;
   width: 100%;
   background: #fff;
@@ -538,6 +588,10 @@ html .res-navTop #header-bottom-right {
   height: 136px;
   border: none;
   border-radius: 0;
+  background-color: #217346;
+  background-image: url(%%headerimg%%);
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
 }
@@ -547,38 +601,10 @@ html .res-navTop #header-bottom-right {
   font-size: 2rem;
 }
 
-#link-desc,
-#noresults,
-#text-desc,
-.deleted > .entry .author,
-.flat-list.buttons .flairselectbtn,
-.link .entry .tagline .userattrs,
-.res .thing .tagline .userattrs,
-.thing .tagline .userattrs,
-.titlebox .tagline {
-  font-size: 0;
-}
-
 #header .pagename a {
   display: inline-block;
   line-height: 72px;
   color: #292f34;
-}
-
-#header-img.default-header {
-  margin-top: 16px;
-  margin-left: 24px;
-  z-index: 99;
-  width: 42px;
-  height: 40px;
-  background-image: url(%%snoo-sprite%%);
-  background-position: 0 0;
-  vertical-align: top;
-  font-size: 0;
-}
-
-#header-img.default-header:hover {
-  background-position: -42px 0;
 }
 
 .leavemoderator a,
@@ -1276,13 +1302,13 @@ html .res #REScommentNavToggle:hover {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uj3vbea;
+  animation-name: uu1s8k8;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes uj3vbea {
+@keyframes uu1s8k8 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -1545,6 +1571,7 @@ body input[type="submit"]:active {
 
 .linefield .linefield-content,
 .link .flat-list,
+.side .titlebox h1.redditname,
 body.listing-page > .content,
 body.other-discussions-page > .content {
   padding: 0;
@@ -1748,7 +1775,6 @@ html
 }
 
 .commentarea .comment a.expand:hover,
-.side .titlebox h1.redditname:before,
 html #RESSearchMenuItem:hover,
 html .guider_button:hover {
   background-color: #217346;
@@ -3465,14 +3491,14 @@ ul.image-preview-list li .description pre {
   font-size: 1.1rem;
   display: inline-block;
   max-height: 35px;
-  animation-name: uj3vbex;
+  animation-name: uu1s8ka;
   animation-delay: 0s;
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
-@keyframes uj3vbex {
+@keyframes uu1s8ka {
   0% {
     width: 0;
   }
@@ -3489,17 +3515,10 @@ ul.image-preview-list li .description pre {
   padding: 0;
 }
 
-.side .titlebox h1.redditname a {
+.side .titlebox h1.redditname a,
+.side .titlebox h1.redditname:before {
   color: #d7dadc;
-  display: block;
-  height: 50px;
-  width: 100%;
   background-color: #217346;
-  background-image: url(%%excel-sidebar%%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
-  text-indent: -9999px;
 }
 
 body #header {
@@ -3670,6 +3689,17 @@ body.wiki-page .side .sidebox.submit.disabled {
 body.comments-page .side,
 body.comments-page:not(.subscriber) .side #login_login-main {
   margin-top: 118px;
+}
+
+.side .titlebox h1.redditname a {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-image: url(%%excel-sidebar%%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
 }
 
 body:not(.subscriber) #header::after {
@@ -4163,6 +4193,7 @@ a[href="https://www.reddit.com/r/excel/wiki/paperclip"]:after
   transform: scaleY(0);
   transition: transform 0.5s;
   transform-origin: top;
+  border-radius: 4px;
 }
 
 .flair-msemployee:before,
