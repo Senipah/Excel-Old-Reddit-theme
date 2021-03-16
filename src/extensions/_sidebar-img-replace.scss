@@ -2,15 +2,18 @@
 
 // This is the one in the sidebar
 
-.side .titlebox h1.redditname a {
-  display: block;
-  height: 50px;
-  width: 100%;
-  background-image: v.getImage("excel-sidebar");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  text-indent: -9999px;
+.side .titlebox h1.redditname {
+  padding: 0;
+  a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-image: v.getImage("excel-sidebar");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px;
+  }
 }
 
 // End Addon
