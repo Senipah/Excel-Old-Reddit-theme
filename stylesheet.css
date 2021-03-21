@@ -194,12 +194,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uu1s8ju;
+  animation-name: uedb9ql;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uu1s8ju {
+@keyframes uedb9ql {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1103,12 +1103,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uu1s8k8;
+  animation-name: uedb9r4;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uu1s8k8 {
+@keyframes uedb9r4 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3544,13 +3544,13 @@ ul.image-preview-list li .description pre {
   font-size: 1.1rem;
   display: inline-block;
   max-height: 35px;
-  animation-name: uu1s8ka;
+  animation-name: uedb9rj;
   animation-delay: 0s;
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
-@keyframes uu1s8ka {
+@keyframes uedb9rj {
   0% {
     width: 0;
   }
